@@ -580,6 +580,65 @@
     );
   }
 
+  function getPageQuery(param, fallback, maxPages) {
+    if (
+      typeof window === "undefined" ||
+      !window.location ||
+      !window.URLSearchParams
+    ) {
+      return fallback;
+    }
+
+    var raw = new window.URLSearchParams(window.location.search).get(param);
+    var page = parseInt(raw, 10);
+
+    if (isNaN(page) || page < 1) {
+      return fallback;
+    }
+
+    if (typeof maxPages === "number") {
+      page = Math.min(page, maxPages);
+    }
+
+    return page;
+  }
+
+  function buildPageLink(basePath, page) {
+    return page > 1 ? basePath + "?page=" + page : basePath;
+  }
+
+  function renderPagination(currentPage, totalPages, basePath) {
+    if (totalPages <= 1) {
+      return "";
+    }
+
+    var links = [];
+
+    for (var i = 1; i <= totalPages; i++) {
+      links.push(
+        '<a class="' +
+          (i === currentPage ? "is-active" : "") +
+          '" href="' +
+          buildPageLink(basePath, i) +
+          '">' +
+          i +
+          "</a>"
+      );
+    }
+
+    if (currentPage < totalPages) {
+      links.push(
+        '<a href="' +
+          buildPageLink(basePath, currentPage + 1) +
+          '">Next</a>'
+      );
+    } else {
+      links.push('<span aria-disabled="true">Next</span>');
+    }
+
+    return '<div class="pagination reveal">' + links.join("") + "</div>";
+  }
+
   function renderHome() {
     return (
       "<main>" +
@@ -861,6 +920,12 @@
   }
 
   function renderCourses() {
+    var perPage = 3;
+    var totalPages = Math.max(1, Math.ceil(courses.length / perPage));
+    var currentPage = getPageQuery("page", 1, totalPages);
+    var startIndex = (currentPage - 1) * perPage;
+    var visibleCourses = courses.slice(startIndex, startIndex + perPage);
+
     return (
       "<main>" +
       pageHero(
@@ -884,7 +949,9 @@
       '<option value="intermediate">Trung cấp</option>' +
       '<option value="advanced">Nâng cao</option>' +
       "</select>" +
-      '<div class="search-results" data-course-results>6 khóa học</div>' +
+      '<div class="search-results" data-course-results>' +
+      visibleCourses.length +
+      " khóa học</div>" +
       '<button class="btn btn-secondary filter-reset" type="button" data-course-reset>Xóa bộ lọc</button>' +
       "</div>" +
       "</div>" +
@@ -892,17 +959,13 @@
       '<section class="section alt">' +
       '<div class="container">' +
       '<div class="grid grid-3">' +
-      courses.map(cardCourse).join("") +
+      visibleCourses.map(cardCourse).join("") +
       "</div>" +
       "</div>" +
       "</section>" +
       '<section class="section">' +
       '<div class="container" style="display:flex; justify-content:center;">' +
-      '<div class="pagination reveal">' +
-      '<a class="is-active" href="#">1</a>' +
-      '<a href="#">2</a>' +
-      '<a href="#">Next</a>' +
-      "</div>" +
+      renderPagination(currentPage, totalPages, "courses.html") +
       "</div>" +
       "</section>" +
       '<section class="section alt">' +
@@ -1121,6 +1184,12 @@
   }
 
   function renderBlog() {
+    var perPage = 3;
+    var totalPages = Math.max(1, Math.ceil(blogPosts.length / perPage));
+    var currentPage = getPageQuery("page", 1, totalPages);
+    var startIndex = (currentPage - 1) * perPage;
+    var visiblePosts = blogPosts.slice(startIndex, startIndex + perPage);
+
     return (
       "<main>" +
       pageHero(
@@ -1134,13 +1203,15 @@
       '<div class="stack">' +
       '<div class="filter-bar reveal" style="grid-template-columns: 1fr;">' +
       '<input class="input" type="search" placeholder="Tìm kiếm bài viết..." data-blog-search />' +
-      '<div class="search-results" data-blog-results>6 bài viết</div>' +
+      '<div class="search-results" data-blog-results>' +
+      visiblePosts.length +
+      " bài viết</div>" +
       "</div>" +
       '<div class="grid grid-2">' +
-      blogPosts.map(cardBlog).join("") +
+      visiblePosts.map(cardBlog).join("") +
       "</div>" +
       '<div style="display:flex; justify-content:center; margin-top: 8px;">' +
-      '<div class="pagination reveal"><a class="is-active" href="#">1</a><a href="#">2</a><a href="#">Next</a></div>' +
+      renderPagination(currentPage, totalPages, "blog.html") +
       "</div>" +
       "</div>" +
       '<aside class="sidebar">' +

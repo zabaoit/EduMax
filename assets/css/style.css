@@ -1454,6 +1454,11 @@ button {
   background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
+.pagination span[aria-disabled="true"] {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
 .sidebar {
   display: grid;
   gap: 20px;
@@ -2082,4 +2087,3 @@ button {
     min-width: 0;
   }
 }
-
