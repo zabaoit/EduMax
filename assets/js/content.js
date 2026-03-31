@@ -296,7 +296,7 @@
     );
   }
 
-  function header(active) {
+  function header(active, pageKey) {
     var navItem = function (href, label, key) {
       return '<a class="nav-link' + (active === key ? " is-active" : "") + '" href="' + href + '">' + label + "</a>";
     };
@@ -320,8 +320,10 @@
       navItem("courses.html", "Khóa học", "courses") +
       navItem("teachers.html", "Giảng viên", "teachers") +
       navItem("blog.html", "Blog", "blog") +
-      navItem("contact.html", "Liên hệ", "contact") +
-      '<a class="btn btn-primary nav-cta" href="contact.html">Đăng ký ngay</a>' +
+      navItem(getContactHref(pageKey), "Liên hệ", "contact") +
+      '<a class="btn btn-primary nav-cta" href="' +
+      getRegisterHref(pageKey) +
+      '">Đăng ký ngay</a>' +
       "</nav>" +
       "</div>" +
       "</header>"
@@ -352,7 +354,7 @@
       '<a href="courses.html">Khóa học</a>' +
       '<a href="teachers.html">Giảng viên</a>' +
       '<a href="blog.html">Blog</a>' +
-      '<a href="contact.html">Liên hệ</a>' +
+      '<a href="contact.html#contact-form">Liên hệ</a>' +
       "</div>" +
       "</div>" +
       "<div>" +
@@ -580,6 +582,16 @@
     );
   }
 
+  function getContactHref(pageKey) {
+    return pageKey === "contact" ? "#contact-form" : "contact.html#contact-form";
+  }
+
+  function getRegisterHref(pageKey) {
+    return pageKey === "contact" || pageKey === "courseDetail"
+      ? "#register-course"
+      : "contact.html#register-course";
+  }
+
   function getPageQuery(param, fallback, maxPages) {
     if (
       typeof window === "undefined" ||
@@ -651,7 +663,9 @@
       '<div class="hero-kicker"><span class="chip">Lộ trình rõ ràng</span><span class="chip badge-soft">100% thực hành</span></div>' +
       '<h1 class="hero-title">Học lập trình web từ cơ bản đến <span>nâng cao</span></h1>' +
       '<p class="hero-lead">EduMax là nền tảng học online giúp bạn làm chủ HTML, CSS, JavaScript và xây dựng website thực tế với giao diện hiện đại, dễ theo dõi.</p>' +
-      '<div class="hero-actions"><a class="btn btn-primary" href="contact.html">Đăng ký ngay</a><a class="btn btn-secondary" href="courses.html">Xem khóa học</a></div>' +
+      '<div class="hero-actions"><a class="btn btn-primary" href="' +
+      getRegisterHref("home") +
+      '">Đăng ký ngay</a><a class="btn btn-secondary" href="courses.html">Xem khóa học</a></div>' +
       '<div class="hero-metrics">' +
       '<div class="metric-card"><span class="metric-value">5.000+</span><span class="metric-label">Học viên đã đồng hành</span></div>' +
       '<div class="metric-card"><span class="metric-value">20+</span><span class="metric-label">Khóa học đa dạng</span></div>' +
@@ -688,7 +702,9 @@
       '<div class="hero-kicker"><span class="chip">Học thử miễn phí</span><span class="chip badge-soft">Cộng đồng hỗ trợ</span></div>' +
       '<h2 class="hero-title">Bắt đầu hành trình học code <span>ngay hôm nay</span></h2>' +
       '<p class="hero-lead">Chỉ với một vài cú click, bạn có thể khám phá khóa học phù hợp, học thử chương đầu và nhận tư vấn lộ trình cá nhân hóa từ đội ngũ EduMax.</p>' +
-      '<div class="hero-actions"><a class="btn btn-primary" href="contact.html">Nhận tư vấn</a><a class="btn btn-secondary" href="blog.html">Đọc blog</a></div>' +
+      '<div class="hero-actions"><a class="btn btn-primary" href="' +
+      getContactHref("home") +
+      '">Nhận tư vấn</a><a class="btn btn-secondary" href="blog.html">Đọc blog</a></div>' +
       '<div class="hero-metrics">' +
       '<div class="metric-card"><span class="metric-value">30+</span><span class="metric-label">Bài học miễn phí</span></div>' +
       '<div class="metric-card"><span class="metric-value">1.299.000</span><span class="metric-label">Gói JavaScript phổ biến</span></div>' +
@@ -817,8 +833,12 @@
       '<p class="section-lead">Chọn một khóa học phù hợp, để EduMax đồng hành cùng bạn từ bước đầu tiên đến khi hoàn thành sản phẩm thật.</p>' +
       "</div>" +
       '<div class="form-actions" style="justify-content: flex-end;">' +
-      '<a class="btn btn-primary" href="contact.html">Đăng ký ngay</a>' +
-      '<a class="btn btn-secondary" href="contact.html">Liên hệ tư vấn</a>' +
+      '<a class="btn btn-primary" href="' +
+      getRegisterHref("home") +
+      '">Đăng ký ngay</a>' +
+      '<a class="btn btn-secondary" href="' +
+      getContactHref("home") +
+      '">Liên hệ tư vấn</a>' +
       "</div>" +
       "</div>" +
       "</div>" +
@@ -909,7 +929,9 @@
       "</div>" +
       '<div class="form-actions" style="justify-content: flex-end;">' +
       '<a class="btn btn-primary" href="courses.html">Xem khóa học</a>' +
-      '<a class="btn btn-secondary" href="contact.html">Liên hệ tư vấn</a>' +
+      '<a class="btn btn-secondary" href="' +
+      getContactHref("about") +
+      '">Liên hệ tư vấn</a>' +
       "</div>" +
       "</div>" +
       "</div>" +
@@ -978,7 +1000,9 @@
       '<p class="section-lead">EduMax sẽ giúp bạn chọn khóa học phù hợp với trình độ hiện tại, mục tiêu nghề nghiệp và thời gian học.</p>' +
       "</div>" +
       '<div class="form-actions" style="justify-content: flex-end;">' +
-      '<a class="btn btn-primary" href="contact.html">Nhận tư vấn</a>' +
+      '<a class="btn btn-primary" href="' +
+      getContactHref("courses") +
+      '">Nhận tư vấn</a>' +
       '<a class="btn btn-secondary" href="course-detail.html">Xem chi tiết mẫu</a>' +
       "</div>" +
       "</div>" +
@@ -1012,7 +1036,11 @@
       '<div class="course-badges"><span class="tag">' + courseDetail.badge + '</span><span class="tag">' + courseDetail.difficulty + '</span><span class="tag">' + courseDetail.mode + '</span></div>' +
       '<h2 class="section-title">' + courseDetail.title + '</h2>' +
       '<p class="section-lead">' + courseDetail.subtitle + '</p>' +
-      '<div class="form-actions"><a class="btn btn-primary" href="#register-course">Đăng ký ngay</a><a class="btn btn-secondary" href="contact.html">Liên hệ tư vấn</a></div>' +
+      '<div class="form-actions"><a class="btn btn-primary" href="' +
+      getRegisterHref("courseDetail") +
+      '">Đăng ký ngay</a><a class="btn btn-secondary" href="' +
+      getContactHref("courseDetail") +
+      '">Liên hệ tư vấn</a></div>' +
       "</div>" +
       "</div>" +
       '<div class="panel reveal">' +
@@ -1327,7 +1355,7 @@
         '<a href="index.html">Trang chủ</a><span>/</span><span>Liên hệ</span>',
         "Đây là trang chuyển đổi hành động, cho phép người dùng gửi thông tin liên hệ hoặc đăng ký khóa học ngay từ giao diện tĩnh."
       ) +
-      '<section class="section">' +
+      '<section class="section" id="contact-form">' +
       '<div class="container">' +
       '<div class="contact-layout">' +
       '<div class="stack">' +
@@ -1363,7 +1391,7 @@
       "</div>" +
       "</div>" +
       "</section>" +
-      '<section class="section alt">' +
+      '<section class="section alt" id="register-course">' +
       '<div class="container">' +
       '<div class="panel reveal">' +
       '<div class="grid grid-2" style="align-items: start;">' +
@@ -1423,6 +1451,6 @@
     }
 
     var navKey = page === "courseDetail" ? "courses" : page === "blogDetail" ? "blog" : page;
-    root.innerHTML = header(navKey) + pageRenderers[page]() + footer();
+    root.innerHTML = header(navKey, page) + pageRenderers[page]() + footer();
   });
 })();
