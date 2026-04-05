@@ -900,6 +900,22 @@ button {
   gap: 14px;
 }
 
+.course-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.course-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.course-card .card-text {
+  margin: 0;
+}
+
 .course-meta,
 .blog-meta,
 .teacher-meta,
@@ -923,6 +939,7 @@ button {
   gap: 14px;
   padding: 0;
   margin: 0;
+  margin-top: auto;
   list-style: none;
 }
 
@@ -950,7 +967,11 @@ button {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+}
+
+.course-footer {
+  margin-top: 16px;
 }
 
 .course-price,
@@ -959,9 +980,21 @@ button {
   color: var(--text);
 }
 
+.course-price {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  white-space: nowrap;
+}
+
 .course-price strong {
   color: var(--primary);
   font-size: 1.15rem;
+}
+
+.course-footer .btn {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .course-thumb {
@@ -1961,10 +1994,13 @@ button {
 
   .slider-controls,
   .footer-bottom,
-  .course-footer,
   .teacher-footer,
   .blog-footer {
     align-items: start;
+  }
+
+  .course-footer {
+    align-items: center;
   }
 }
 

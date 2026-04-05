@@ -9,6 +9,7 @@
 
   var courses = [
     {
+      slug: "html-css-cho-nguoi-moi",
       title: "HTML & CSS cho người mới bắt đầu",
       category: "front-end",
       level: "beginner",
@@ -22,6 +23,7 @@
       price: "499.000 VNĐ",
     },
     {
+      slug: "javascript-co-ban-den-nang-cao",
       title: "JavaScript cơ bản đến nâng cao",
       category: "front-end",
       level: "intermediate",
@@ -35,6 +37,7 @@
       price: "1.299.000 VNĐ",
     },
     {
+      slug: "responsive-web-design",
       title: "Responsive Web Design",
       category: "front-end",
       level: "beginner",
@@ -48,6 +51,7 @@
       price: "699.000 VNĐ",
     },
     {
+      slug: "bootstrap-thuc-hanh",
       title: "Bootstrap thực hành",
       category: "front-end",
       level: "beginner",
@@ -61,6 +65,7 @@
       price: "599.000 VNĐ",
     },
     {
+      slug: "ui-ux-co-ban-cho-nguoi-lam-web",
       title: "UI/UX cơ bản cho người làm web",
       category: "uiux",
       level: "intermediate",
@@ -74,6 +79,7 @@
       price: "899.000 VNĐ",
     },
     {
+      slug: "du-an-website-hoan-chinh",
       title: "Dự án website hoàn chỉnh",
       category: "project",
       level: "advanced",
@@ -165,90 +171,638 @@
 
   var blogPosts = [
     {
-      title: "5 bước để bắt đầu học lập trình web cho người mới",
+      slug: "lo-trinh-5-buoc-hoc-web",
+      title: "Lộ trình 5 bước tự học lập trình web cho người mới",
       date: "15/03/2026",
       author: "EduMax",
       category: "Lộ trình học",
-      excerpt: "Bài viết gợi ý một lộ trình đơn giản, dễ bắt đầu và phù hợp với sinh viên hoặc người chuyển ngành.",
+      excerpt: "Một lộ trình gọn, dễ áp dụng để đi từ mục tiêu đến thực hành và portfolio mà không bị quá tải.",
       thumb: "thumb-blue",
+      cover: "indigo",
+      detail: {
+        intro: "Nếu bạn mới bắt đầu, cách an toàn nhất là đi theo một lộ trình ngắn, rõ và dễ duy trì. Thay vì học dàn trải, hãy chia hành trình thành từng chặng nhỏ để nhìn thấy tiến bộ sớm.",
+        sections: [
+          {
+            title: "Bước 1: Xác định mục tiêu học",
+            paragraphs: [
+              "Hãy tự hỏi bạn muốn làm giao diện, theo front-end hay chỉ cần nắm nền tảng để thử sức với web. Khi có mục tiêu, bạn sẽ biết nên học sâu đến đâu và tránh bỏ thời gian vào phần chưa cần thiết.",
+            ],
+          },
+          {
+            title: "Bước 2: Nắm HTML và CSS",
+            paragraphs: [
+              "HTML giúp bạn dựng khung nội dung, còn CSS giúp bạn tạo bố cục và phong cách hiển thị. Hai phần này nên học song song để bạn sớm nhìn thấy kết quả trên trình duyệt.",
+            ],
+          },
+          {
+            title: "Bước 3: Học JavaScript cơ bản",
+            paragraphs: [
+              "Khi đã quen với giao diện tĩnh, hãy chuyển sang JavaScript để hiểu cách website phản hồi khi người dùng tương tác. Chỉ cần bắt đầu từ biến, điều kiện, vòng lặp và DOM là đủ cho giai đoạn đầu.",
+            ],
+          },
+          {
+            title: "Bước 4: Làm một vài dự án nhỏ",
+            paragraphs: [
+              "Thực hành bằng các bài như to-do list, trang giới thiệu cá nhân hoặc form có kiểm tra dữ liệu. Dự án nhỏ giúp bạn nhớ lâu hơn và nhận ra phần nào mình còn yếu để quay lại ôn tập.",
+            ],
+          },
+          {
+            title: "Bước 5: Tạo portfolio và duy trì thói quen học",
+            paragraphs: [
+              "Gom lại những gì bạn đã làm thành một portfolio đơn giản, rồi tiếp tục nâng cấp bằng các dự án mới. Đây là cách tốt để theo dõi tiến bộ của bản thân và chuẩn bị cho những bước tiếp theo.",
+            ],
+          },
+        ],
+        highlight: "Đi chậm, học chắc và làm dự án sớm thường hiệu quả hơn rất nhiều so với việc nhảy cóc giữa quá nhiều chủ đề.",
+        closing: "Mỗi ngày chỉ cần một chút, bạn vẫn sẽ tiến bộ rất nhanh nếu luôn gắn kiến thức với thực hành.",
+      },
     },
     {
+      slug: "html-css-javascript-khac-nhau",
       title: "HTML, CSS và JavaScript khác nhau như thế nào?",
       date: "18/03/2026",
       author: "EduMax",
       category: "Kiến thức nền tảng",
       excerpt: "Giải thích ngắn gọn vai trò của từng ngôn ngữ để bạn hiểu cách chúng kết hợp tạo ra website hoàn chỉnh.",
       thumb: "thumb-indigo",
+      cover: "orange",
+      detail: {
+        intro: "Ba cái tên HTML, CSS và JavaScript thường xuất hiện cùng nhau, nhưng mỗi công cụ đảm nhận một vai trò khác nhau. Khi hiểu rõ chức năng của từng phần, bạn sẽ học web có hệ thống hơn rất nhiều.",
+        sections: [
+          {
+            title: "HTML là phần khung",
+            paragraphs: [
+              "HTML dùng để tạo cấu trúc và nội dung cho trang web. Nó quyết định tiêu đề, đoạn văn, hình ảnh, nút bấm và những thành phần cơ bản khác mà người dùng nhìn thấy.",
+            ],
+          },
+          {
+            title: "CSS là phần giao diện",
+            paragraphs: [
+              "CSS chịu trách nhiệm về màu sắc, khoảng cách, bố cục và phong cách trình bày. Nhờ CSS, một trang web từ dạng thô sơ có thể trở nên rõ ràng, hiện đại và dễ nhìn hơn.",
+            ],
+          },
+          {
+            title: "JavaScript là phần tương tác",
+            paragraphs: [
+              "JavaScript giúp website có hành vi như mở menu, kiểm tra form, thay đổi nội dung hoặc xử lý nút bấm. Nếu HTML là khung và CSS là diện mạo, thì JavaScript là thứ làm trang web sống động.",
+            ],
+          },
+          {
+            title: "Nên học theo thứ tự nào?",
+            paragraphs: [
+              "Với người mới, thứ tự dễ nhất là HTML trước, CSS sau rồi mới tới JavaScript cơ bản. Cách đi này giúp bạn xây nền tảng chắc hơn và không bị rối khi gặp quá nhiều khái niệm cùng lúc.",
+            ],
+          },
+          {
+            title: "Ghép cả ba trong một dự án nhỏ",
+            paragraphs: [
+              "Hãy thử làm một landing page đơn giản: dùng HTML để dựng nội dung, CSS để tạo giao diện và JavaScript để làm nút bấm hoặc form phản hồi. Đây là cách nhanh nhất để hiểu sự khác nhau giữa ba công nghệ.",
+            ],
+          },
+        ],
+        highlight: "HTML tạo khung, CSS tạo hình, JavaScript tạo hành động.",
+        closing: "Khi hiểu đúng vai trò của từng phần, việc học lập trình web sẽ rõ ràng và dễ nhớ hơn nhiều.",
+      },
     },
     {
+      slug: "loi-pho-bien-khi-thiet-ke-landing-page",
       title: "Những lỗi phổ biến khi thiết kế landing page",
       date: "20/03/2026",
       author: "EduMax",
       category: "Thiết kế web",
       excerpt: "Tổng hợp các lỗi bố cục, nội dung và CTA mà người mới thường mắc phải khi làm landing page.",
       thumb: "thumb-orange",
+      cover: "slate",
+      detail: {
+        intro: "Landing page thường dùng để giới thiệu sản phẩm, khóa học hoặc chiến dịch cụ thể, nên mỗi chi tiết đều cần phục vụ một mục tiêu rõ ràng. Khi người mới làm landing page, lỗi thường không nằm ở kỹ thuật mà nằm ở cách sắp xếp nội dung.",
+        sections: [
+          {
+            title: "Tiêu đề quá chung chung",
+            paragraphs: [
+              "Nhiều trang mở đầu bằng những câu rất đẹp nhưng không nói rõ người dùng sẽ nhận được gì. Một tiêu đề tốt cần trả lời nhanh câu hỏi: sản phẩm này giúp được gì cho tôi?",
+            ],
+          },
+          {
+            title: "Nút kêu gọi hành động chưa đủ mạnh",
+            paragraphs: [
+              "CTA nên rõ ràng, dễ thấy và xuất hiện đúng lúc. Nếu nút bấm mờ nhạt hoặc đặt quá sâu trong trang, người dùng rất dễ bỏ qua hành động bạn muốn họ làm.",
+            ],
+          },
+          {
+            title: "Bố cục rối và thiếu khoảng trắng",
+            paragraphs: [
+              "Landing page không cần nhồi thật nhiều thông tin. Một bố cục thoáng, có nhịp đọc hợp lý sẽ giúp nội dung nổi bật hơn và giữ người xem lâu hơn.",
+            ],
+          },
+          {
+            title: "Không tối ưu cho mobile",
+            paragraphs: [
+              "Phần lớn người dùng sẽ xem trang trên điện thoại, nên giao diện cần co giãn tốt và nút bấm đủ lớn để thao tác dễ dàng. Nếu mobile khó dùng, hiệu quả của landing page sẽ giảm ngay.",
+            ],
+          },
+          {
+            title: "Thiếu yếu tố tạo niềm tin",
+            paragraphs: [
+              "Một vài lời chứng thực, số liệu nổi bật hoặc hình ảnh thật có thể giúp người xem yên tâm hơn. Landing page tốt không chỉ đẹp mà còn phải thuyết phục.",
+            ],
+          },
+        ],
+        highlight: "Một landing page tốt cần rõ, ngắn và dẫn người dùng đến hành động cụ thể.",
+        closing: "Trước khi thêm hiệu ứng, hãy chắc rằng nội dung, luồng đọc và CTA đã ổn.",
+      },
     },
     {
+      slug: "cach-xay-dung-portfolio-sinh-vien-it",
       title: "Cách xây dựng portfolio cho sinh viên IT",
       date: "22/03/2026",
       author: "EduMax",
       category: "Career",
       excerpt: "Portfolio là yếu tố giúp bạn nổi bật hơn. Bài viết chia sẻ cách chuẩn bị portfolio gọn, đẹp và thuyết phục.",
       thumb: "thumb-teal",
+      cover: "indigo",
+      detail: {
+        intro: "Portfolio không cần quá cầu kỳ, nhưng cần cho người xem thấy bạn biết làm gì và đã làm được gì. Với sinh viên IT, một portfolio gọn gàng đôi khi hiệu quả hơn rất nhiều so với việc nhồi quá nhiều mục.",
+        sections: [
+          {
+            title: "Chọn vài dự án tốt nhất",
+            paragraphs: [
+              "Đừng cố đưa mọi bài tập vào portfolio. Hãy chọn 2 đến 4 dự án thể hiện rõ kỹ năng, cách suy nghĩ và mức độ hoàn thiện của bạn.",
+            ],
+          },
+          {
+            title: "Viết ngắn gọn về quá trình làm",
+            paragraphs: [
+              "Ngoài hình ảnh sản phẩm, hãy mô tả mục tiêu, công nghệ đã dùng và vấn đề bạn đã giải quyết. Phần này giúp người xem hiểu cách bạn làm việc chứ không chỉ nhìn thấy giao diện cuối cùng.",
+            ],
+          },
+          {
+            title: "Đưa dự án lên môi trường thật",
+            paragraphs: [
+              "Một portfolio có link chạy thật sẽ đáng tin hơn nhiều so với ảnh chụp màn hình. Nếu có thể, hãy deploy website của bạn để người xem trải nghiệm trực tiếp.",
+            ],
+          },
+          {
+            title: "Thêm thông tin liên hệ rõ ràng",
+            paragraphs: [
+              "Người xem nên có cách liên hệ với bạn chỉ sau vài thao tác. Một email, GitHub hoặc LinkedIn được đặt đúng chỗ sẽ làm portfolio chuyên nghiệp hơn.",
+            ],
+          },
+          {
+            title: "Cập nhật thường xuyên",
+            paragraphs: [
+              "Portfolio là thứ nên sống cùng tiến bộ của bạn. Mỗi khi hoàn thành dự án mới hoặc học thêm kỹ năng mới, hãy thêm vào để hồ sơ luôn phản ánh đúng năng lực hiện tại.",
+            ],
+          },
+        ],
+        highlight: "Ít nhưng chất lượng thường tốt hơn nhiều so với một portfolio đầy nhưng rỗng.",
+        closing: "Hãy coi portfolio là bản tóm tắt năng lực, không phải nơi nhét hết mọi thứ.",
+      },
     },
     {
+      slug: "responsive-web-la-gi",
       title: "Responsive web là gì và vì sao quan trọng?",
       date: "25/03/2026",
       author: "EduMax",
       category: "Front-end",
       excerpt: "Vì người dùng truy cập web bằng nhiều thiết bị khác nhau, responsive trở thành kỹ năng bắt buộc.",
       thumb: "thumb-pink",
+      cover: "orange",
+      detail: {
+        intro: "Responsive web là cách thiết kế để giao diện tự thích nghi với nhiều kích thước màn hình khác nhau. Đây là kỹ năng rất quan trọng vì người dùng ngày nay không chỉ xem web trên máy tính mà còn trên điện thoại và máy tính bảng.",
+        sections: [
+          {
+            title: "Responsive nghĩa là gì?",
+            paragraphs: [
+              "Một giao diện responsive sẽ co giãn hoặc thay đổi bố cục để phù hợp với từng thiết bị. Mục tiêu là giữ cho nội dung luôn dễ đọc và dễ thao tác.",
+            ],
+          },
+          {
+            title: "Bắt đầu từ tư duy mobile-first",
+            paragraphs: [
+              "Thiết kế từ màn hình nhỏ trước giúp bạn tập trung vào phần quan trọng nhất của nội dung. Sau đó, bạn mở rộng dần cho màn hình lớn hơn.",
+            ],
+          },
+          {
+            title: "Dùng layout linh hoạt",
+            paragraphs: [
+              "Thay vì đặt kích thước cố định cho mọi thứ, hãy ưu tiên các giá trị co giãn, lưới linh hoạt và thành phần có thể xếp lại theo không gian hiển thị.",
+            ],
+          },
+          {
+            title: "Kết hợp media queries",
+            paragraphs: [
+              "Media queries cho phép giao diện thay đổi ở các điểm gãy khác nhau. Nhờ đó bạn có thể điều chỉnh cỡ chữ, lề, cột và vị trí các thành phần sao cho hợp lý hơn.",
+            ],
+          },
+          {
+            title: "Luôn kiểm tra trên nhiều thiết bị",
+            paragraphs: [
+              "Đừng chỉ nhìn website trên màn hình máy tính. Hãy thử trên điện thoại, tablet và nhiều độ phân giải để đảm bảo trải nghiệm không bị vỡ bố cục.",
+            ],
+          },
+        ],
+        highlight: "Responsive không chỉ là co nhỏ giao diện, mà là thiết kế theo ngữ cảnh sử dụng.",
+        closing: "Một trang web tốt phải dùng được thoải mái ở cả desktop lẫn điện thoại.",
+      },
     },
     {
+      slug: "bat-dau-hoc-front-end-tu-dau",
       title: "Nên bắt đầu học Front-end từ đâu?",
       date: "27/03/2026",
       author: "EduMax",
       category: "Lộ trình học",
       excerpt: "Nếu bạn đang phân vân bắt đầu như thế nào, đây là bài viết dành cho bạn với danh sách tài nguyên dễ theo.",
       thumb: "thumb-slate",
+      cover: "slate",
+      detail: {
+        intro: "Nếu bạn chưa biết nên bắt đầu từ đâu, hãy đi theo thứ tự dễ nhớ và dễ kiểm tra tiến độ. Front-end là một hành trình khá dài, nhưng bạn hoàn toàn có thể rút ngắn sự mơ hồ bằng cách chia nó thành từng chặng.",
+        sections: [
+          {
+            title: "Bắt đầu với HTML và CSS",
+            paragraphs: [
+              "Hai phần này là nền tảng để bạn hiểu cách xây dựng cấu trúc và giao diện của website. Khi đã quen, bạn sẽ dễ đọc code và dễ tự tạo trang đơn giản hơn.",
+            ],
+          },
+          {
+            title: "Sau đó học JavaScript cơ bản",
+            paragraphs: [
+              "JavaScript giúp giao diện có tương tác, nên đây là bước tiếp theo rất tự nhiên. Hãy bắt đầu từ biến, điều kiện, vòng lặp, hàm và DOM trước khi đi xa hơn.",
+            ],
+          },
+          {
+            title: "Làm quen với Git và GitHub",
+            paragraphs: [
+              "Bạn không cần học quá sâu ngay từ đầu, nhưng nên biết cách lưu phiên bản code và đưa dự án lên GitHub. Điều này giúp bạn quản lý bài tập và portfolio tốt hơn.",
+            ],
+          },
+          {
+            title: "Làm các dự án nhỏ",
+            paragraphs: [
+              "Sau mỗi phần lý thuyết, hãy làm một bài nhỏ để củng cố. Những dự án như trang giới thiệu cá nhân, to-do list hay form validation sẽ giúp bạn nhớ lâu hơn.",
+            ],
+          },
+          {
+            title: "Chọn lộ trình phù hợp với mục tiêu",
+            paragraphs: [
+              "Khi đã có nền tảng, bạn có thể rẽ sang React, UI, hoặc tập trung vào dự án thực tế tùy hướng đi của mình. Quan trọng là đừng ôm quá nhiều thứ cùng lúc.",
+            ],
+          },
+        ],
+        highlight: "Đừng cố học mọi thứ trong một lần; hãy chia thành chặng ngắn và đo tiến bộ sau mỗi chặng.",
+        closing: "Sau khi có nền tảng, bạn có thể rẽ sang front-end, UI hoặc dự án cá nhân tùy mục tiêu.",
+      },
     },
   ];
 
-  var courseDetail = {
-    title: "JavaScript từ cơ bản đến nâng cao",
-    label: "JavaScript",
-    subtitle: "Khóa học dành cho người muốn nắm chắc logic, DOM và xây dựng tương tác web thực tế.",
-    badge: "Front-end",
-    difficulty: "Cơ bản - Trung cấp",
-    hours: "24 buổi",
-    lessons: "48 bài học",
-    instructor: "Lê Quốc Bảo",
-    fee: "1.299.000 VNĐ",
-    mode: "Học online",
-    certificate: "Có chứng chỉ hoàn thành",
-    schedule: "Học linh hoạt theo video và buổi hỗ trợ trực tuyến",
-    modules: [
-      {
-        title: "Module 1: Tổng quan JavaScript",
-        items: ["Giới thiệu ngôn ngữ", "Cách nhúng JS vào HTML", "Biến và kiểu dữ liệu"],
-      },
-      {
-        title: "Module 2: Cấu trúc điều khiển",
-        items: ["if else", "switch case", "Vòng lặp"],
-      },
-      {
-        title: "Module 3: Hàm và mảng",
-        items: ["function", "array", "object cơ bản"],
-      },
-      {
-        title: "Module 4: DOM và Event",
-        items: ["Truy xuất phần tử", "Thay đổi nội dung", "Bắt sự kiện click"],
-      },
-      {
-        title: "Module 5: Dự án thực hành",
-        items: ["To-do list", "Form validation", "Landing page có tương tác"],
-      },
-    ],
+  function getQueryParam(name) {
+    if (!window.location.search) {
+      return "";
+    }
+
+    var query = window.location.search.replace(/^\?/, "").split("&");
+
+    for (var i = 0; i < query.length; i += 1) {
+      if (!query[i]) {
+        continue;
+      }
+
+      var pair = query[i].split("=");
+      var key = decodeURIComponent(pair[0] || "");
+
+      if (key === name) {
+        return decodeURIComponent((pair[1] || "").replace(/\+/g, " "));
+      }
+    }
+
+    return "";
+  }
+
+  function getBlogPostBySlug(slug) {
+    if (!slug) {
+      return blogPosts[0];
+    }
+
+    for (var i = 0; i < blogPosts.length; i += 1) {
+      if (blogPosts[i].slug === slug) {
+        return blogPosts[i];
+      }
+    }
+
+    return blogPosts[0];
+  }
+
+  function blogDetailHref(post) {
+    return "blog-detail.html?post=" + encodeURIComponent(post.slug);
+  }
+
+  function renderBlogParagraphs(paragraphs) {
+    return paragraphs
+      .map(function (paragraph) {
+        return "<p>" + paragraph + "</p>";
+      })
+      .join("");
+  }
+
+  function renderBlogDetailSections(sections) {
+    return sections
+      .map(function (section) {
+        return "<h3>" + section.title + "</h3>" + renderBlogParagraphs(section.paragraphs || []);
+      })
+      .join("");
+  }
+
+  function renderList(items, className) {
+    return (
+      '<ul class="' +
+      className +
+      '">' +
+      items
+        .map(function (item) {
+          return "<li>" + item + "</li>";
+        })
+        .join("") +
+      "</ul>"
+    );
+  }
+
+  function getCourseBySlug(slug) {
+    var defaultSlug = "javascript-co-ban-den-nang-cao";
+
+    function findCourse(targetSlug) {
+      for (var i = 0; i < courses.length; i += 1) {
+        if (courses[i].slug === targetSlug) {
+          return courses[i];
+        }
+      }
+      return null;
+    }
+
+    return findCourse(slug) || findCourse(defaultSlug) || courses[0];
+  }
+
+  function courseDetailHref(course) {
+    return "course-detail.html?course=" + encodeURIComponent(course.slug);
+  }
+
+  function getInitials(name) {
+    return String(name || "")
+      .split(/\s+/)
+      .filter(Boolean)
+      .map(function (part) {
+        return part.charAt(0);
+      })
+      .join("")
+      .toUpperCase()
+      .slice(0, 3);
+  }
+
+  var courseDetails = {
+    "html-css-cho-nguoi-moi": {
+      subtitle: "Khóa học nền tảng dành cho người mới muốn dựng giao diện web đầu tiên bằng HTML và CSS.",
+      instructor: "Phạm Gia Huy",
+      instructorBio: "Front-end Mentor, 4 năm kinh nghiệm hướng dẫn người mới xây layout và responsive.",
+      audience: [
+        "Người chưa từng học web",
+        "Sinh viên muốn bắt đầu front-end",
+        "Người chuyển ngành sang lập trình",
+        "Người cần làm landing page cơ bản",
+      ],
+      goals: [
+        "Hiểu cấu trúc HTML và semantic",
+        "Biết dùng CSS để tạo kiểu và bố cục",
+        "Làm layout với Flexbox và Grid",
+        "Hoàn thiện landing page đầu tay",
+      ],
+      modules: [
+        {
+          title: "Module 1: Làm quen HTML",
+          items: ["Cấu trúc tài liệu", "Thẻ phổ biến", "Semantic HTML"],
+        },
+        {
+          title: "Module 2: CSS cơ bản",
+          items: ["Selector", "Box model", "Typography và màu sắc"],
+        },
+        {
+          title: "Module 3: Bố cục hiện đại",
+          items: ["Flexbox", "CSS Grid", "Căn chỉnh phần tử"],
+        },
+        {
+          title: "Module 4: Responsive nền tảng",
+          items: ["Media queries", "Hình ảnh linh hoạt", "Mobile-first"],
+        },
+        {
+          title: "Module 5: Mini project",
+          items: ["Trang giới thiệu cá nhân", "Landing page sản phẩm", "Hoàn thiện portfolio"],
+        },
+      ],
+      highlight: "Sau khóa học, bạn có thể tự dựng một website tĩnh có bố cục rõ ràng và hiển thị tốt trên nhiều thiết bị.",
+      closing: "Đây là bước khởi đầu lý tưởng trước khi chuyển sang JavaScript hoặc các framework.",
+    },
+    "javascript-co-ban-den-nang-cao": {
+      subtitle: "Khóa học giúp bạn làm chủ logic JavaScript, xử lý DOM và xây dựng tương tác web thực tế.",
+      instructor: "Lê Quốc Bảo",
+      instructorBio: "JavaScript Instructor, 6 năm kinh nghiệm triển khai dự án web và mentoring học viên.",
+      audience: [
+        "Người mới đã biết HTML và CSS cơ bản",
+        "Sinh viên CNTT muốn học logic lập trình",
+        "Người chuyển ngành sang front-end",
+        "Người muốn làm website có tương tác",
+      ],
+      goals: [
+        "Nắm cú pháp JavaScript nền tảng",
+        "Hiểu if/else, vòng lặp và hàm",
+        "Thao tác DOM và sự kiện trên trang",
+        "Tự xây mini project có tương tác",
+      ],
+      modules: [
+        {
+          title: "Module 1: Nền tảng JavaScript",
+          items: ["Biến và kiểu dữ liệu", "Toán tử và câu lệnh", "Cách nhúng JS vào HTML"],
+        },
+        {
+          title: "Module 2: Điều khiển luồng",
+          items: ["if/else", "switch case", "Vòng lặp"],
+        },
+        {
+          title: "Module 3: Hàm và dữ liệu",
+          items: ["function", "array", "object cơ bản"],
+        },
+        {
+          title: "Module 4: DOM và Event",
+          items: ["Truy xuất phần tử", "Thay đổi nội dung", "Bắt sự kiện click"],
+        },
+        {
+          title: "Module 5: Dự án thực hành",
+          items: ["To-do list", "Form validation", "Landing page có tương tác"],
+        },
+      ],
+      highlight: "Sau khóa học, bạn có thể tự xử lý tương tác cơ bản cho website và hiểu cách JavaScript điều khiển giao diện.",
+      closing: "Đây là bước tiếp theo tự nhiên sau khi bạn đã nắm HTML và CSS.",
+    },
+    "responsive-web-design": {
+      subtitle: "Khóa học dành cho người muốn thiết kế website hiển thị tốt trên desktop, tablet và mobile.",
+      instructor: "Phạm Gia Huy",
+      instructorBio: "Front-end Mentor, chuyên tối ưu giao diện đa thiết bị và bố cục linh hoạt.",
+      audience: [
+        "Người đã biết HTML và CSS cơ bản",
+        "Học viên muốn tối ưu giao diện mobile",
+        "Người làm landing page hoặc portfolio",
+        "Người muốn hiểu tư duy mobile-first",
+      ],
+      goals: [
+        "Biết tư duy mobile-first",
+        "Dùng layout linh hoạt với Flexbox và Grid",
+        "Tạo giao diện phù hợp nhiều breakpoint",
+        "Kiểm tra và tinh chỉnh hiển thị trên nhiều thiết bị",
+      ],
+      modules: [
+        {
+          title: "Module 1: Tư duy responsive",
+          items: ["Viewport và breakpoint", "Mobile-first", "Nguyên tắc co giãn"],
+        },
+        {
+          title: "Module 2: Flexbox và Grid",
+          items: ["Xếp cột linh hoạt", "Wrap và alignment", "Layout theo tỉ lệ"],
+        },
+        {
+          title: "Module 3: Media queries",
+          items: ["Chọn breakpoint", "Tùy biến cỡ chữ", "Ẩn/hiện thành phần"],
+        },
+        {
+          title: "Module 4: Hình ảnh và component",
+          items: ["Ảnh responsive", "Navbar mobile", "Card và bảng"],
+        },
+        {
+          title: "Module 5: Dự án responsive",
+          items: ["Landing page đa thiết bị", "Portfolio cá nhân", "Kiểm tra và tinh chỉnh"],
+        },
+      ],
+      highlight: "Responsive không chỉ là co nhỏ giao diện, mà là thiết kế theo ngữ cảnh sử dụng.",
+      closing: "Một trang web tốt phải dùng được thoải mái ở cả desktop lẫn điện thoại.",
+    },
+    "bootstrap-thuc-hanh": {
+      subtitle: "Khóa học giúp bạn xây giao diện nhanh bằng Bootstrap và tận dụng hệ thống component có sẵn.",
+      instructor: "Nguyễn Minh Anh",
+      instructorBio: "Front-end Developer, 5 năm kinh nghiệm xây dựng website doanh nghiệp và component system.",
+      audience: [
+        "Người muốn dựng giao diện nhanh",
+        "Sinh viên cần prototype sớm",
+        "Người mới học front-end",
+        "Người muốn hiểu Bootstrap để đi dự án",
+      ],
+      goals: [
+        "Nắm grid system của Bootstrap",
+        "Dùng component và utility class",
+        "Tùy biến theme cơ bản",
+        "Xây trang hoàn chỉnh bằng Bootstrap",
+      ],
+      modules: [
+        {
+          title: "Module 1: Làm quen Bootstrap",
+          items: ["Cài đặt", "CDN và file local", "Cấu trúc dự án"],
+        },
+        {
+          title: "Module 2: Grid system",
+          items: ["Container và row", "Columns", "Responsive breakpoints"],
+        },
+        {
+          title: "Module 3: Component phổ biến",
+          items: ["Button và card", "Navbar và modal", "Form và alert"],
+        },
+        {
+          title: "Module 4: Utility classes",
+          items: ["Spacing", "Display và flex", "Color và typography"],
+        },
+        {
+          title: "Module 5: Xây landing page",
+          items: ["Dựng layout nhanh", "Tùy biến giao diện", "Hoàn thiện sản phẩm"],
+        },
+      ],
+      highlight: "Bootstrap giúp bạn rút ngắn thời gian dựng layout và tập trung hơn vào nội dung sản phẩm.",
+      closing: "Đây là lựa chọn phù hợp khi bạn cần làm giao diện nhanh mà vẫn gọn gàng.",
+    },
+    "ui-ux-co-ban-cho-nguoi-lam-web": {
+      subtitle: "Khóa học dành cho người muốn hiểu tư duy thiết kế giao diện, luồng sử dụng và trải nghiệm người dùng.",
+      instructor: "Trần Thu Hà",
+      instructorBio: "UI/UX Designer, chuyên thiết kế giao diện hiện đại và tối ưu trải nghiệm người dùng.",
+      audience: [
+        "Người làm web muốn hiểu UX",
+        "Sinh viên thiết kế hoặc sản phẩm số",
+        "Người chuyển sang UI/UX",
+        "Người cần làm wireframe và prototype",
+      ],
+      goals: [
+        "Hiểu research và user flow",
+        "Biết wireframe và prototype",
+        "Xây hệ thống màu sắc và component",
+        "Trình bày thiết kế rõ ràng cho team dev",
+      ],
+      modules: [
+        {
+          title: "Module 1: Tư duy UI/UX",
+          items: ["Vai trò của UI và UX", "Nguyên tắc sử dụng", "Phân biệt đẹp và hiệu quả"],
+        },
+        {
+          title: "Module 2: Nghiên cứu người dùng",
+          items: ["Xác định nhu cầu", "Persona cơ bản", "User flow"],
+        },
+        {
+          title: "Module 3: Wireframe và layout",
+          items: ["Phác thảo khung", "Cấu trúc màn hình", "Làm việc với lưới"],
+        },
+        {
+          title: "Module 4: Visual design",
+          items: ["Màu sắc và typography", "Spacing và hierarchy", "Component cơ bản"],
+        },
+        {
+          title: "Module 5: Prototype và handoff",
+          items: ["Prototype", "Nhận feedback", "Bàn giao cho dev"],
+        },
+      ],
+      highlight: "UI tốt giúp người dùng thấy rõ, UX tốt giúp người dùng đi đúng hướng.",
+      closing: "Khóa học này phù hợp nếu bạn muốn thiết kế giao diện có chiều sâu thay vì chỉ làm đẹp bề mặt.",
+    },
+    "du-an-website-hoan-chinh": {
+      subtitle: "Khóa học thực chiến giúp bạn ghép HTML, CSS, JavaScript và responsive vào một website hoàn chỉnh.",
+      instructor: "Vũ Thành Đạt",
+      instructorBio: "Web Instructor, tập trung tư duy lập trình web và hoàn thiện sản phẩm đầu tay cho sinh viên.",
+      audience: [
+        "Người đã học nền tảng front-end",
+        "Người muốn làm project thật",
+        "Sinh viên cần portfolio để đi xin việc",
+        "Người muốn luyện quy trình từ đầu đến cuối",
+      ],
+      goals: [
+        "Lên cấu trúc dự án rõ ràng",
+        "Xây layout và responsive hoàn chỉnh",
+        "Thêm tương tác JavaScript cơ bản",
+        "Deploy website hoàn chỉnh lên hosting",
+      ],
+      modules: [
+        {
+          title: "Module 1: Lên kế hoạch dự án",
+          items: ["Chọn đề tài", "Sitemap và wireframe", "Chia task"],
+        },
+        {
+          title: "Module 2: Xây dựng giao diện",
+          items: ["Header và hero", "Section nội dung", "Footer"],
+        },
+        {
+          title: "Module 3: Responsive và tối ưu",
+          items: ["Bố cục đa thiết bị", "Tối ưu hình ảnh", "Kiểm tra breakpoints"],
+        },
+        {
+          title: "Module 4: Tương tác cơ bản",
+          items: ["Menu mobile", "Form validation", "Slider hoặc tab"],
+        },
+        {
+          title: "Module 5: Hoàn thiện và deploy",
+          items: ["Code review", "Deploy lên hosting", "Viết mô tả portfolio"],
+        },
+      ],
+      highlight: "Một project hoàn chỉnh là cách nhanh nhất để chứng minh năng lực front-end của bạn.",
+      closing: "Khóa học này phù hợp khi bạn đã sẵn sàng ghép mọi kiến thức thành một sản phẩm thật.",
+    },
   };
 
   var faqItems = [
@@ -447,7 +1001,7 @@
       '<div class="course-price"><strong>' +
       course.price +
       "</strong></div>" +
-      '<a class="btn btn-secondary" href="course-detail.html">Xem chi tiết</a>' +
+      '<a class="btn btn-secondary" href="' + courseDetailHref(course) + '">Xem chi tiết</a>' +
       "</div>" +
       "</div>" +
       "</article>"
@@ -516,7 +1070,7 @@
       "</p>" +
       '<div class="blog-footer">' +
       '<span class="tag">' + post.category + "</span>" +
-      '<a class="btn btn-secondary" href="blog-detail.html">Đọc thêm</a>' +
+      '<a class="btn btn-secondary" href="' + blogDetailHref(post) + '">Đọc thêm</a>' +
       "</div>" +
       "</div>" +
       "</article>"
@@ -684,7 +1238,9 @@
       '<div class="hero-kicker"><span class="chip">Dự án thật</span><span class="chip badge-soft">Giảng viên đồng hành</span></div>' +
       '<h2 class="hero-title">Làm website thực tế như một <span>front-end developer</span></h2>' +
       '<p class="hero-lead">Mỗi khóa học tại EduMax đều đi kèm bài tập, mini project và dự án cuối khóa để bạn có sản phẩm đưa vào portfolio cá nhân.</p>' +
-      '<div class="hero-actions"><a class="btn btn-primary" href="courses.html">Bắt đầu học ngay</a><a class="btn btn-light" href="course-detail.html">Xem lộ trình</a></div>' +
+      '<div class="hero-actions"><a class="btn btn-primary" href="courses.html">Bắt đầu học ngay</a><a class="btn btn-light" href="' +
+      courseDetailHref(courses[1]) +
+      '">Xem lộ trình</a></div>' +
       '<div class="hero-metrics">' +
       '<div class="metric-card"><span class="metric-value">6+</span><span class="metric-label">Dự án thực hành</span></div>' +
       '<div class="metric-card"><span class="metric-value">10+</span><span class="metric-label">Giảng viên kinh nghiệm</span></div>' +
@@ -1003,7 +1559,9 @@
       '<a class="btn btn-primary" href="' +
       getContactHref("courses") +
       '">Nhận tư vấn</a>' +
-      '<a class="btn btn-secondary" href="course-detail.html">Xem chi tiết mẫu</a>' +
+      '<a class="btn btn-secondary" href="' +
+      courseDetailHref(courses[1]) +
+      '">Xem chi tiết mẫu</a>' +
       "</div>" +
       "</div>" +
       "</div>" +
@@ -1014,28 +1572,58 @@
   }
 
   function renderCourseDetail() {
-    var relatedCourses = courses.filter(function (course) {
-      return course.title !== courseDetail.title;
-    }).slice(0, 3);
+    var course = getCourseBySlug(getQueryParam("course"));
+    var detail = courseDetails[course.slug] || courseDetails["javascript-co-ban-den-nang-cao"];
+    var relatedCourses = courses
+      .filter(function (item) {
+        return item.slug !== course.slug;
+      })
+      .slice(0, 3);
+    var subtitle = detail.subtitle || course.description;
+    var instructorName = detail.instructor || "EduMax";
+    var instructorBio = detail.instructorBio || "Giảng viên đồng hành cùng học viên trong suốt khóa học.";
+    var instructorInitials = getInitials(instructorName);
+    var modules = detail.modules || [];
+    var audience = detail.audience || [];
+    var goals = detail.goals || [];
+    var highlight = detail.highlight || course.description;
+    var certificate = detail.certificate || "Có chứng chỉ hoàn thành";
+    var schedule = detail.schedule || "Học linh hoạt theo video và buổi hỗ trợ trực tuyến";
+
+    if (typeof document !== "undefined") {
+      document.title = "EduMax | " + course.title;
+      var metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute("content", course.description);
+      }
+    }
 
     return (
       "<main>" +
       pageHero(
         "Chi tiết khóa học",
         '<a href="index.html">Trang chủ</a><span>/</span><a href="courses.html">Khóa học</a><span>/</span><span>Chi tiết</span>',
-        "Đây là trang mẫu mô phỏng chi tiết khóa JavaScript tại EduMax, đầy đủ thông tin cần thiết để người học ra quyết định."
+        "Trang này cho phép bạn xem nhanh nội dung, giảng viên và form đăng ký của khóa học đang được chọn."
       ) +
       '<section class="section">' +
       '<div class="container">' +
       '<div class="detail-layout">' +
       '<div class="panel reveal">' +
-      '<div class="course-thumb thumb-indigo" style="min-height: 320px;">' +
-      (courseDetail.label || "JavaScript") +
+      '<div class="course-thumb ' + course.thumb + '" style="min-height: 320px;">' +
+      (course.label || course.title) +
       "</div>" +
       '<div class="stack" style="margin-top: 24px;">' +
-      '<div class="course-badges"><span class="tag">' + courseDetail.badge + '</span><span class="tag">' + courseDetail.difficulty + '</span><span class="tag">' + courseDetail.mode + '</span></div>' +
-      '<h2 class="section-title">' + courseDetail.title + '</h2>' +
-      '<p class="section-lead">' + courseDetail.subtitle + '</p>' +
+      '<div class="course-badges"><span class="tag">' +
+      course.badge +
+      '</span><span class="tag">' +
+      course.difficulty +
+      '</span><span class="tag">Học online</span></div>' +
+      '<h2 class="section-title">' +
+      course.title +
+      '</h2>' +
+      '<p class="section-lead">' +
+      subtitle +
+      '</p>' +
       '<div class="form-actions"><a class="btn btn-primary" href="' +
       getRegisterHref("courseDetail") +
       '">Đăng ký ngay</a><a class="btn btn-secondary" href="' +
@@ -1046,12 +1634,24 @@
       '<div class="panel reveal">' +
       '<p class="section-eyebrow">Thông tin chính</p>' +
       '<div class="stack">' +
-      '<div class="contact-item"><span class="contact-icon">⏱</span><div><strong>Thời lượng</strong><small>' + courseDetail.hours + '</small></div></div>' +
-      '<div class="contact-item"><span class="contact-icon">📘</span><div><strong>Số bài học</strong><small>' + courseDetail.lessons + '</small></div></div>' +
-      '<div class="contact-item"><span class="contact-icon">👨‍🏫</span><div><strong>Giảng viên</strong><small>' + courseDetail.instructor + '</small></div></div>' +
-      '<div class="contact-item"><span class="contact-icon">💵</span><div><strong>Học phí</strong><small>' + courseDetail.fee + '</small></div></div>' +
-      '<div class="contact-item"><span class="contact-icon">🎓</span><div><strong>Chứng chỉ</strong><small>' + courseDetail.certificate + '</small></div></div>' +
-      '<div class="contact-item"><span class="contact-icon">📅</span><div><strong>Lịch học</strong><small>' + courseDetail.schedule + '</small></div></div>' +
+      '<div class="contact-item"><span class="contact-icon">⏱</span><div><strong>Thời lượng</strong><small>' +
+      course.hours +
+      '</small></div></div>' +
+      '<div class="contact-item"><span class="contact-icon">📘</span><div><strong>Số bài học</strong><small>' +
+      course.lessons +
+      '</small></div></div>' +
+      '<div class="contact-item"><span class="contact-icon">👨‍🏫</span><div><strong>Giảng viên</strong><small>' +
+      instructorName +
+      '</small></div></div>' +
+      '<div class="contact-item"><span class="contact-icon">💵</span><div><strong>Học phí</strong><small>' +
+      course.price +
+      '</small></div></div>' +
+      '<div class="contact-item"><span class="contact-icon">🎓</span><div><strong>Chứng chỉ</strong><small>' +
+      certificate +
+      '</small></div></div>' +
+      '<div class="contact-item"><span class="contact-icon">📅</span><div><strong>Lịch học</strong><small>' +
+      schedule +
+      '</small></div></div>' +
       "</div>" +
       "</div>" +
       "</div>" +
@@ -1059,36 +1659,39 @@
       "</section>" +
       '<section class="section alt">' +
       '<div class="container">' +
-      renderSectionHeading("Mô tả chi tiết", "Khóa học JavaScript dành cho ai?", "Khóa học này phù hợp cho người mới muốn học logic lập trình web, sinh viên CNTT hoặc người chuyển ngành sang front-end.", "") +
+      renderSectionHeading("Mô tả chi tiết", "Khóa học " + course.label + " dành cho ai?", subtitle, "") +
       '<div class="about-layout">' +
       '<div class="panel reveal">' +
       '<h3>Khóa học dành cho ai</h3>' +
-      '<ul class="check-list"><li>Người mới học lập trình</li><li>Sinh viên CNTT</li><li>Người muốn học làm website</li><li>Người chuyển ngành sang Front-end</li></ul>' +
+      renderList(audience, "check-list") +
       "</div>" +
       '<div class="panel reveal">' +
       '<h3>Mục tiêu khóa học</h3>' +
-      '<ul class="check-list"><li>Hiểu cú pháp JavaScript và cách hoạt động của ngôn ngữ</li><li>Biết thao tác DOM, sự kiện và form validation</li><li>Xây dựng được các tính năng tương tác cơ bản cho website</li><li>Tự tin làm mini project và dự án cuối khóa</li></ul>' +
+      renderList(goals, "check-list") +
       "</div>" +
       "</div>" +
-      '<div class="highlight-box reveal" style="margin-top: 24px;">Sau khóa học, học viên có thể xây dựng giao diện web tương tác, xử lý sự kiện, thao tác DOM và làm các dự án JavaScript thực tế.</div>' +
+      (highlight ? '<div class="highlight-box reveal" style="margin-top: 24px;">' + highlight + "</div>" : "") +
       "</div>" +
       "</section>" +
       '<section class="section">' +
       '<div class="container">' +
-      renderSectionHeading("Nội dung khóa học", "Lộ trình 5 module chính", "Mỗi module được thiết kế để bạn hiểu nhanh, thực hành ngay và đi từ nền tảng đến dự án thực tế.", "") +
+      renderSectionHeading(
+        "Nội dung khóa học",
+        "Lộ trình " + modules.length + " module chính",
+        "Mỗi module được thiết kế để bạn hiểu nhanh, thực hành ngay và đi từ nền tảng đến dự án thực tế.",
+        ""
+      ) +
       '<div class="accordion reveal" data-accordion data-single="true">' +
-      courseDetail.modules
+      modules
         .map(function (module, index) {
           return (
             '<article class="accordion-item' + (index === 0 ? " is-open" : "") + '">' +
             '<button class="accordion-trigger" type="button" data-accordion-trigger aria-expanded="' + (index === 0 ? "true" : "false") + '">' +
             module.title +
             "</button>" +
-            '<div class="accordion-panel"><div class="accordion-panel-inner"><ul class="dot-list">' +
-            module.items.map(function (item) {
-              return "<li>" + item + "</li>";
-            }).join("") +
-            "</ul></div></div>" +
+            '<div class="accordion-panel"><div class="accordion-panel-inner">' +
+            renderList(module.items || [], "dot-list") +
+            "</div></div>" +
             "</article>"
           );
         })
@@ -1098,10 +1701,23 @@
       "</section>" +
       '<section class="section alt">' +
       '<div class="container">' +
-      renderSectionHeading("Đối tượng phù hợp", "Ai nên tham gia khóa học này?", "", "") +
+      renderSectionHeading(
+        "Đối tượng phù hợp",
+        "Ai nên tham gia khóa " + course.label + "?",
+        "Nếu bạn đang cân nhắc, phần này giúp bạn xác định nhanh khóa học có phù hợp với mình hay không.",
+        ""
+      ) +
       '<div class="grid grid-2">' +
-      '<div class="panel reveal"><ul class="check-list"><li>Người mới học lập trình</li><li>Sinh viên CNTT</li><li>Người muốn học làm website</li><li>Người chuyển ngành sang Front-end</li></ul></div>' +
-      '<div class="panel reveal"><h3>Giảng viên phụ trách</h3><div class="contact-item"><div class="avatar indigo">QB</div><div><strong>Lê Quốc Bảo</strong><small>JavaScript Instructor, 6 năm kinh nghiệm và nhiều dự án web thực tế.</small></div></div><p class="page-note">Phần này giúp tăng độ tin cậy và làm cho trang chi tiết giống một khóa học thật hơn.</p></div>' +
+      '<div class="panel reveal">' +
+      renderList(audience, "check-list") +
+      "</div>" +
+      '<div class="panel reveal"><h3>Giảng viên phụ trách</h3><div class="contact-item"><div class="avatar indigo">' +
+      instructorInitials +
+      '</div><div><strong>' +
+      instructorName +
+      '</strong><small>' +
+      instructorBio +
+      '</small></div></div><p class="page-note">Phần này giúp tăng độ tin cậy và làm cho trang chi tiết giống một khóa học thật hơn.</p></div>' +
       "</div>" +
       "</div>" +
       "</section>" +
@@ -1141,7 +1757,9 @@
       '<div class="grid grid-2" style="align-items: start;">' +
       '<div>' +
       '<p class="section-eyebrow">Form đăng ký nhanh</p>' +
-      '<h2 class="section-title">Đăng ký học JavaScript</h2>' +
+      '<h2 class="section-title">Đăng ký học ' +
+      course.label +
+      '</h2>' +
       '<p class="section-lead">Điền thông tin bên dưới, EduMax sẽ liên hệ lại để tư vấn lộ trình phù hợp và thời gian bắt đầu.</p>' +
       "</div>" +
       '<form class="form-grid" novalidate data-validate-form data-success-message="Đăng ký thành công! Chúng tôi sẽ liên hệ sớm.">' +
@@ -1149,7 +1767,9 @@
       '<div class="field"><label for="course-name">Họ và tên</label><input id="course-name" class="input" type="text" required placeholder="Nhập họ và tên" /></div>' +
       '<div class="field"><label for="course-email">Email</label><input id="course-email" class="input" type="email" required placeholder="you@example.com" /></div>' +
       '<div class="field"><label for="course-phone">Số điện thoại</label><input id="course-phone" class="input" type="tel" required placeholder="0909 123 456" /></div>' +
-      '<div class="field"><label for="course-select">Tên khóa học</label><input id="course-select" class="input" type="text" value="' + courseDetail.title + '" readonly /></div>' +
+      '<div class="field"><label for="course-select">Tên khóa học</label><input id="course-select" class="input" type="text" value="' +
+      course.title +
+      '" readonly /></div>' +
       "</div>" +
       '<div class="field"><label for="course-note">Ghi chú</label><textarea id="course-note" class="textarea" placeholder="Bạn muốn học vào khung giờ nào?"></textarea></div>' +
       '<div class="form-actions"><button class="btn btn-primary" type="submit">Gửi đăng ký</button></div>' +
@@ -1212,7 +1832,7 @@
   }
 
   function renderBlog() {
-    var perPage = 3;
+    var perPage = 4;
     var totalPages = Math.max(1, Math.ceil(blogPosts.length / perPage));
     var currentPage = getPageQuery("page", 1, totalPages);
     var startIndex = (currentPage - 1) * perPage;
@@ -1249,7 +1869,7 @@
       blogPosts
         .slice(0, 3)
         .map(function (post) {
-          return '<li><a href="blog-detail.html"><strong>' + post.title + '</strong><small>' + post.date + "</small></a></li>";
+          return '<li><a href="' + blogDetailHref(post) + '"><strong>' + post.title + '</strong><small>' + post.date + "</small></a></li>";
         })
         .join("") +
       "</ul>" +
@@ -1283,7 +1903,17 @@
   }
 
   function renderBlogDetail() {
-    var post = blogPosts[0];
+    var post = getBlogPostBySlug(getQueryParam("post"));
+    var detail = post.detail || {};
+    var coverTone = detail.cover || post.cover || "indigo";
+
+    if (typeof document !== "undefined") {
+      document.title = "EduMax | " + post.title;
+      var metaDescription = document.querySelector('meta[name="description"]');
+      if (metaDescription) {
+        metaDescription.setAttribute("content", post.excerpt);
+      }
+    }
 
     return (
       "<main>" +
@@ -1299,22 +1929,13 @@
       '<div class="article-hero reveal">' +
       '<div class="article-meta"><span>' + post.date + "</span><span>•</span><span>" + post.author + "</span><span>•</span><span>" + post.category + "</span></div>" +
       "<h2>" + post.title + "</h2>" +
-      '<div class="article-cover indigo"></div>' +
+      '<div class="article-cover ' + coverTone + '"></div>' +
       "</div>" +
       '<div class="panel article-content reveal">' +
-      "<h3>Mở đầu</h3>" +
-      "<p>Nếu bạn mới bắt đầu học lập trình web, việc có một lộ trình rõ ràng là điều rất quan trọng. Bài viết này chia sẻ cách đi từng bước để tránh bị ngợp.</p>" +
-      "<h3>Bước 1: Tìm hiểu HTML</h3>" +
-      "<p>HTML là phần nền tảng giúp bạn tạo cấu trúc nội dung cho trang web. Hãy làm quen với các thẻ cơ bản trước khi đi sâu vào giao diện.</p>" +
-      "<h3>Bước 2: Học CSS</h3>" +
-      "<p>CSS giúp bạn tạo kiểu, bố cục và cảm giác thị giác cho website. Đây là bước biến một trang web thô thành một giao diện có bản sắc.</p>" +
-      "<h3>Bước 3: Làm quen JavaScript</h3>" +
-      "<p>JavaScript mang lại tương tác. Khi đã hiểu HTML và CSS, bạn sẽ thấy JavaScript giúp website sống động hơn rất nhiều.</p>" +
-      "<h3>Bước 4: Thực hành dự án nhỏ</h3>" +
-      "<p>Đừng chờ học xong hết mới làm. Một to-do list, landing page hoặc form validation đơn giản là đủ để luyện tư duy.</p>" +
-      "<h3>Bước 5: Xây dựng portfolio</h3>" +
-      "<p>Portfolio là nơi bạn trưng bày thành quả học tập và tạo ấn tượng với nhà tuyển dụng.</p>" +
-      '<div class="highlight-box">Học lập trình web hiệu quả nhất là vừa học lý thuyết vừa làm dự án thực tế.</div>' +
+      "<p>" + detail.intro + "</p>" +
+      renderBlogDetailSections(detail.sections || []) +
+      (detail.highlight ? '<div class="highlight-box">' + detail.highlight + "</div>" : "") +
+      (detail.closing ? "<p>" + detail.closing + "</p>" : "") +
       "</div>" +
       "</article>" +
       '<aside class="sidebar">' +
@@ -1322,9 +1943,12 @@
       "<h3>Bài viết liên quan</h3>" +
       '<ul class="sidebar-list">' +
       blogPosts
-        .slice(1, 4)
+        .filter(function (item) {
+          return item.slug !== post.slug;
+        })
+        .slice(0, 3)
         .map(function (item) {
-          return '<li><a href="blog-detail.html"><strong>' + item.title + '</strong><small>' + item.category + "</small></a></li>";
+          return '<li><a href="' + blogDetailHref(item) + '"><strong>' + item.title + "</strong><small>" + item.category + "</small></a></li>";
         })
         .join("") +
       "</ul>" +
