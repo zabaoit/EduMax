@@ -1,18 +1,236 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Blog EduMax chia sẻ kiến thức, lộ trình học và mẹo thiết kế web cho người mới." />
-  <title>EduMax | Blog</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/js/content.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/slider.js" defer></script>
-  <script src="assets/js/filter.js" defer></script>
-  <script src="assets/js/form-validation.js" defer></script>
-</head>
-<body data-page="blog">
-  <div id="site-root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog EduMax chia sẻ kiến thức, lộ trình học và mẹo thiết kế web cho người mới." />
+    <title>EduMax | Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/filter.js" defer></script>
+    <script src="assets/js/form-validation.js" defer></script>
+  </head>
+  <body data-page="blog">
+    <header class="header-shell">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="EduMax trang chủ">
+          <span class="brand-mark">E</span>
+          <span class="brand-copy">
+            <strong>EduMax</strong>
+            <small>Nền tảng học lập trình web</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Mở menu" data-nav-toggle>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link" href="about.html">Giới thiệu</a>
+          <a class="nav-link" href="courses.html">Khóa học</a>
+          <a class="nav-link" href="teachers.html">Giảng viên</a>
+          <a class="nav-link is-active" href="blog.html">Blog</a>
+          <a class="nav-link" href="contact.html#contact-form">Liên hệ</a>
+          <a class="btn btn-primary nav-cta" href="contact.html#register-course">Đăng ký ngay</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-card reveal">
+            <div class="page-hero-grid">
+              <div class="breadcrumbs">
+                <a href="index.html">Trang chủ</a>
+                <span>/</span>
+                <span>Blog</span>
+              </div>
+              <h1>Blog / Chia sẻ kiến thức</h1>
+              <p>Khu vực blog giúp website trông chuyên nghiệp hơn, đồng thời gợi ý thêm nội dung hữu ích về lập trình web và thiết kế giao diện.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="blog-layout">
+            <div class="stack">
+              <div class="filter-bar reveal" style="grid-template-columns: 1fr;">
+                <input class="input" type="search" placeholder="Tìm kiếm bài viết..." data-blog-search />
+                <div class="search-results" data-blog-results>4 bài viết</div>
+              </div>
+              <div class="grid grid-2">
+                <article class="card blog-card reveal" data-blog-card data-title="Lộ trình 5 bước tự học lập trình web cho người mới" data-excerpt="Một lộ trình gọn, dễ áp dụng để đi từ mục tiêu đến thực hành và portfolio mà không bị quá tải." data-author="EduMax">
+                  <div class="course-thumb thumb-blue">Lộ trình học</div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <span>15/03/2026</span>
+                      <span>•</span>
+                      <span>EduMax</span>
+                    </div>
+                    <h3 class="card-title">Lộ trình 5 bước tự học lập trình web cho người mới</h3>
+                    <p class="card-text">Một lộ trình gọn, dễ áp dụng để đi từ mục tiêu đến thực hành và portfolio mà không bị quá tải.</p>
+                    <div class="blog-footer">
+                      <span class="tag">Lộ trình học</span>
+                      <a class="btn btn-secondary" href="blog-lo-trinh-5-buoc-hoc-web.html">Đọc thêm</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="card blog-card reveal" data-blog-card data-title="HTML, CSS và JavaScript khác nhau như thế nào?" data-excerpt="Giải thích ngắn gọn vai trò của từng ngôn ngữ để bạn hiểu cách chúng kết hợp tạo ra website hoàn chỉnh." data-author="EduMax">
+                  <div class="course-thumb thumb-indigo">Kiến thức nền tảng</div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <span>18/03/2026</span>
+                      <span>•</span>
+                      <span>EduMax</span>
+                    </div>
+                    <h3 class="card-title">HTML, CSS và JavaScript khác nhau như thế nào?</h3>
+                    <p class="card-text">Giải thích ngắn gọn vai trò của từng ngôn ngữ để bạn hiểu cách chúng kết hợp tạo ra website hoàn chỉnh.</p>
+                    <div class="blog-footer">
+                      <span class="tag">Kiến thức nền tảng</span>
+                      <a class="btn btn-secondary" href="blog-html-css-javascript-khac-nhau.html">Đọc thêm</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="card blog-card reveal" data-blog-card data-title="Những lỗi phổ biến khi thiết kế landing page" data-excerpt="Tổng hợp các lỗi bố cục, nội dung và CTA mà người mới thường mắc phải khi làm landing page." data-author="EduMax">
+                  <div class="course-thumb thumb-orange">Thiết kế web</div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <span>20/03/2026</span>
+                      <span>•</span>
+                      <span>EduMax</span>
+                    </div>
+                    <h3 class="card-title">Những lỗi phổ biến khi thiết kế landing page</h3>
+                    <p class="card-text">Tổng hợp các lỗi bố cục, nội dung và CTA mà người mới thường mắc phải khi làm landing page.</p>
+                    <div class="blog-footer">
+                      <span class="tag">Thiết kế web</span>
+                      <a class="btn btn-secondary" href="blog-loi-pho-bien-khi-thiet-ke-landing-page.html">Đọc thêm</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="card blog-card reveal" data-blog-card data-title="Cách xây dựng portfolio cho sinh viên IT" data-excerpt="Portfolio là yếu tố giúp bạn nổi bật hơn. Bài viết chia sẻ cách chuẩn bị portfolio gọn, đẹp và thuyết phục." data-author="EduMax">
+                  <div class="course-thumb thumb-teal">Career</div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <span>22/03/2026</span>
+                      <span>•</span>
+                      <span>EduMax</span>
+                    </div>
+                    <h3 class="card-title">Cách xây dựng portfolio cho sinh viên IT</h3>
+                    <p class="card-text">Portfolio là yếu tố giúp bạn nổi bật hơn. Bài viết chia sẻ cách chuẩn bị portfolio gọn, đẹp và thuyết phục.</p>
+                    <div class="blog-footer">
+                      <span class="tag">Career</span>
+                      <a class="btn btn-secondary" href="blog-cach-xay-dung-portfolio-sinh-vien-it.html">Đọc thêm</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div style="display:flex; justify-content:center; margin-top: 8px;">
+                <div class="pagination reveal">
+                  <a class="is-active" href="blog.html">1</a>
+                  <a class="" href="blog-page-2.html">2</a>
+                  <a href="blog-page-2.html">Next</a>
+                </div>
+              </div>
+            </div>
+            <aside class="sidebar">
+              <div class="panel reveal">
+                <h3>Bài viết mới nhất</h3>
+                <ul class="sidebar-list">
+                  <li>
+                    <a href="blog-lo-trinh-5-buoc-hoc-web.html">
+                      <strong>Lộ trình 5 bước tự học lập trình web cho người mới</strong>
+                      <small>15/03/2026</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blog-html-css-javascript-khac-nhau.html">
+                      <strong>HTML, CSS và JavaScript khác nhau như thế nào?</strong>
+                      <small>18/03/2026</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blog-loi-pho-bien-khi-thiet-ke-landing-page.html">
+                      <strong>Những lỗi phổ biến khi thiết kế landing page</strong>
+                      <small>20/03/2026</small>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="panel reveal">
+                <h3>Danh mục</h3>
+                <div class="tag-list">
+                  <span class="tag">Lộ trình học</span>
+                  <span class="tag">Kiến thức nền tảng</span>
+                  <span class="tag">Thiết kế web</span>
+                  <span class="tag">Career</span>
+                  <span class="tag">Front-end</span>
+                </div>
+              </div>
+              <div class="panel reveal">
+                <h3>Tag phổ biến</h3>
+                <div class="tag-list">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive</span>
+                  <span class="tag">Portfolio</span>
+                  <span class="tag">UI/UX</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark">E</span>
+              <span class="brand-copy">
+                <strong>EduMax</strong>
+                <small>Nền tảng học lập trình web</small>
+              </span>
+            </a>
+            <p>EduMax là website tĩnh mô phỏng nền tảng học online, tập trung vào giao diện hiện đại, nội dung rõ ràng và trải nghiệm người dùng chuyên nghiệp.</p>
+            <div class="footer-social">
+              <a class="social-link" href="#" aria-label="Facebook">F</a>
+              <a class="social-link" href="#" aria-label="YouTube">Y</a>
+              <a class="social-link" href="#" aria-label="TikTok">T</a>
+            </div>
+          </div>
+          <div>
+            <h4>Liên kết nhanh</h4>
+            <div class="footer-links">
+              <a href="about.html">Giới thiệu</a>
+              <a href="courses.html">Khóa học</a>
+              <a href="teachers.html">Giảng viên</a>
+              <a href="blog.html">Blog</a>
+              <a href="contact.html#contact-form">Liên hệ</a>
+            </div>
+          </div>
+          <div>
+            <h4>Thông tin liên hệ</h4>
+            <div class="footer-contact">
+              <span>123 Nguyễn Văn Linh, Đà Nẵng</span>
+              <a href="tel:0909123456">0909 123 456</a>
+              <a href="mailto:info@edumax.vn">info@edumax.vn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 EduMax. All rights reserved.</span>
+          <span>Thiết kế website tĩnh giới thiệu nền tảng khóa học online</span>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Lên đầu trang" data-back-to-top>↑</button>
+  </body>
 </html>

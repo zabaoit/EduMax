@@ -1,18 +1,731 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="EduMax - Nền tảng học lập trình web online với lộ trình thực chiến, giảng viên giàu kinh nghiệm và khóa học phù hợp cho người mới bắt đầu." />
-  <title>EduMax | Trang chủ</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/js/content.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/slider.js" defer></script>
-  <script src="assets/js/filter.js" defer></script>
-  <script src="assets/js/form-validation.js" defer></script>
-</head>
-<body data-page="home">
-  <div id="site-root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="EduMax - Nền tảng học lập trình web online với lộ trình thực chiến, giảng viên giàu kinh nghiệm và khóa học phù hợp cho người mới bắt đầu." />
+    <title>EduMax | Trang chủ</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/filter.js" defer></script>
+    <script src="assets/js/form-validation.js" defer></script>
+  </head>
+  <body data-page="home">
+    <header class="header-shell">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="EduMax trang chủ">
+          <span class="brand-mark">E</span>
+          <span class="brand-copy">
+            <strong>EduMax</strong>
+            <small>Nền tảng học lập trình web</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Mở menu" data-nav-toggle>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a class="nav-link is-active" href="index.html">Trang chủ</a>
+          <a class="nav-link" href="about.html">Giới thiệu</a>
+          <a class="nav-link" href="courses.html">Khóa học</a>
+          <a class="nav-link" href="teachers.html">Giảng viên</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="contact.html#contact-form">Liên hệ</a>
+          <a class="btn btn-primary nav-cta" href="contact.html#register-course">Đăng ký ngay</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-shell reveal">
+          <div class="hero-slider" data-slider data-slider-mode="fade" data-autoplay="true" data-interval="6500">
+            <div class="hero-track" data-slider-track>
+              <article class="hero-slide is-active" data-slider-slide>
+                <div class="hero-copy">
+                  <div class="hero-kicker">
+                    <span class="chip">Lộ trình rõ ràng</span>
+                    <span class="chip badge-soft">100% thực hành</span>
+                  </div>
+                  <h1 class="hero-title">Học lập trình web từ cơ bản đến <span>nâng cao</span>
+                  </h1>
+                  <p class="hero-lead">EduMax là nền tảng học online giúp bạn làm chủ HTML, CSS, JavaScript và xây dựng website thực tế với giao diện hiện đại, dễ theo dõi.</p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="contact.html#register-course">Đăng ký ngay</a>
+                    <a class="btn btn-secondary" href="courses.html">Xem khóa học</a>
+                  </div>
+                  <div class="hero-metrics">
+                    <div class="metric-card">
+                      <span class="metric-value">5.000+</span>
+                      <span class="metric-label">Học viên đã đồng hành</span>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-value">20+</span>
+                      <span class="metric-label">Khóa học đa dạng</span>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-value">95%</span>
+                      <span class="metric-label">Hài lòng sau khóa</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-visual">
+                  <div class="browser-window">
+                    <div class="browser-topbar">
+                      <span class="browser-dot red">
+                      </span>
+                      <span class="browser-dot yellow">
+                      </span>
+                      <span class="browser-dot green">
+                      </span>
+                    </div>
+                    <div class="browser-content">
+                      <div class="browser-panel ">
+                        <h3>Website học online hiện đại</h3>
+                        <p>HTML, CSS, JavaScript, Bootstrap và dự án thực chiến</p>
+                        <div class="code-window">
+                          <span class="code-line w-80">
+                          </span>
+                          <span class="code-line w-68">
+                          </span>
+                          <span class="code-line w-55">
+                          </span>
+                          <span class="code-line w-44">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="floating-card top-left">
+                    <strong>24 buổi</strong>
+                    <small>JavaScript nâng cao</small>
+                  </div>
+                  <div class="floating-card bottom-right">
+                    <strong>1:1 Mentor</strong>
+                    <small>Hỗ trợ học viên</small>
+                  </div>
+                  <div class="floating-card center">
+                    <strong>100% Online</strong>
+                    <small>Học mọi lúc, mọi nơi</small>
+                  </div>
+                </div>
+              </article>
+              <article class="hero-slide" data-slider-slide>
+                <div class="hero-copy">
+                  <div class="hero-kicker">
+                    <span class="chip">Dự án thật</span>
+                    <span class="chip badge-soft">Giảng viên đồng hành</span>
+                  </div>
+                  <h2 class="hero-title">Làm website thực tế như một <span>front-end developer</span>
+                  </h2>
+                  <p class="hero-lead">Mỗi khóa học tại EduMax đều đi kèm bài tập, mini project và dự án cuối khóa để bạn có sản phẩm đưa vào portfolio cá nhân.</p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="courses.html">Bắt đầu học ngay</a>
+                    <a class="btn btn-light" href="course-javascript-co-ban-den-nang-cao.html">Xem lộ trình</a>
+                  </div>
+                  <div class="hero-metrics">
+                    <div class="metric-card">
+                      <span class="metric-value">6+</span>
+                      <span class="metric-label">Dự án thực hành</span>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-value">10+</span>
+                      <span class="metric-label">Giảng viên kinh nghiệm</span>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-value">24/7</span>
+                      <span class="metric-label">Tài liệu học tập</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-visual">
+                  <div class="browser-window">
+                    <div class="browser-topbar">
+                      <span class="browser-dot red">
+                      </span>
+                      <span class="browser-dot yellow">
+                      </span>
+                      <span class="browser-dot green">
+                      </span>
+                    </div>
+                    <div class="browser-content">
+                      <div class="browser-panel alt">
+                        <h3>Xây dựng giao diện chuẩn responsive</h3>
+                        <p>Thiết kế đẹp trên desktop, tablet và mobile</p>
+                        <div class="code-window">
+                          <span class="code-line w-80">
+                          </span>
+                          <span class="code-line w-80">
+                          </span>
+                          <span class="code-line w-68">
+                          </span>
+                          <span class="code-line w-55">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="floating-card top-left">
+                    <strong>Responsive</strong>
+                    <small>Chuẩn mobile-first</small>
+                  </div>
+                  <div class="floating-card bottom-right">
+                    <strong>Portfolio</strong>
+                    <small>Đủ mạnh để showcase</small>
+                  </div>
+                </div>
+              </article>
+              <article class="hero-slide" data-slider-slide>
+                <div class="hero-copy">
+                  <div class="hero-kicker">
+                    <span class="chip">Học thử miễn phí</span>
+                    <span class="chip badge-soft">Cộng đồng hỗ trợ</span>
+                  </div>
+                  <h2 class="hero-title">Bắt đầu hành trình học code <span>ngay hôm nay</span>
+                  </h2>
+                  <p class="hero-lead">Chỉ với một vài cú click, bạn có thể khám phá khóa học phù hợp, học thử chương đầu và nhận tư vấn lộ trình cá nhân hóa từ đội ngũ EduMax.</p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="contact.html#contact-form">Nhận tư vấn</a>
+                    <a class="btn btn-secondary" href="blog.html">Đọc blog</a>
+                  </div>
+                  <div class="hero-metrics">
+                    <div class="metric-card">
+                      <span class="metric-value">30+</span>
+                      <span class="metric-label">Bài học miễn phí</span>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-value">1.299.000</span>
+                      <span class="metric-label">Gói JavaScript phổ biến</span>
+                    </div>
+                    <div class="metric-card">
+                      <span class="metric-value">24/7</span>
+                      <span class="metric-label">Hỗ trợ qua email</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-visual">
+                  <div class="browser-window">
+                    <div class="browser-topbar">
+                      <span class="browser-dot red">
+                      </span>
+                      <span class="browser-dot yellow">
+                      </span>
+                      <span class="browser-dot green">
+                      </span>
+                    </div>
+                    <div class="browser-content">
+                      <div class="browser-panel slate">
+                        <h3>Tư duy làm sản phẩm</h3>
+                        <p>Không chỉ học code, bạn còn học cách triển khai website hoàn chỉnh</p>
+                        <div class="code-window">
+                          <span class="code-line w-80">
+                          </span>
+                          <span class="code-line w-68">
+                          </span>
+                          <span class="code-line w-68">
+                          </span>
+                          <span class="code-line w-55">
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="floating-card top-left">
+                    <strong>Chứng chỉ</strong>
+                    <small>Hoàn thành khóa học</small>
+                  </div>
+                  <div class="floating-card bottom-right">
+                    <strong>Mentor</strong>
+                    <small>Phản hồi bài tập</small>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="slider-controls">
+              <div class="slider-actions">
+                <button class="icon-btn" type="button" data-slider-prev aria-label="Slide trước">←</button>
+                <button class="icon-btn" type="button" data-slider-next aria-label="Slide tiếp">→</button>
+              </div>
+              <div class="slider-dots" data-slider-dots>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Lợi ích nổi bật</p>
+              <h2 class="section-title">Học tập linh hoạt, dễ tiếp cận, phù hợp người mới</h2>
+              <p class="section-lead">EduMax tập trung vào trải nghiệm học dễ hiểu với nội dung cô đọng, bài tập thực hành rõ ràng và hệ thống hỗ trợ bền vững.</p>
+            </div>
+          </div>
+          <div class="grid grid-4">
+            <article class="card feature-card reveal">
+              <span class="feature-icon">24/7</span>
+              <h3 class="card-title">Học mọi lúc, mọi nơi</h3>
+              <p>Video, tài liệu và bài tập đều được sắp xếp khoa học để bạn học theo tốc độ riêng.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">GV</span>
+              <h3 class="card-title">Giảng viên kinh nghiệm</h3>
+              <p>Học cùng mentor đã từng triển khai dự án web thực tế và hiểu rõ người mới cần gì.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">TH</span>
+              <h3 class="card-title">Thực hành liên tục</h3>
+              <p>90% thời lượng khóa học là luyện tập, giúp bạn làm được sản phẩm ngay sau mỗi chương.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">HT</span>
+              <h3 class="card-title">Hỗ trợ sau khóa</h3>
+              <p>Học viên được hỗ trợ giải đáp khi ôn tập, chuẩn bị portfolio hoặc định hướng việc làm.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Khóa học nổi bật</p>
+              <h2 class="section-title">Ba khóa học tiêu biểu tại EduMax</h2>
+            </div>
+            <a class="btn btn-secondary" href="courses.html">Xem toàn bộ khóa học</a>
+          </div>
+          <div class="grid grid-3">
+            <article class="card course-card reveal" data-course-card data-title="HTML & CSS cho người mới bắt đầu" data-description="Học cách xây dựng giao diện website cơ bản, sạch và dễ mở rộng." data-category="front-end" data-level="beginner">
+              <div class="course-thumb thumb-blue">HTML & CSS</div>
+              <div class="card-body">
+                <div class="course-meta">
+                  <span class="tag">Front-end</span>
+                  <span class="tag">Cơ bản</span>
+                </div>
+                <h3 class="card-title">HTML & CSS cho người mới bắt đầu</h3>
+                <p class="card-text">Học cách xây dựng giao diện website cơ bản, sạch và dễ mở rộng.</p>
+                <ul class="course-list">
+                  <li>36 bài học</li>
+                  <li>24 giờ học</li>
+                  <li>499.000 VNĐ</li>
+                </ul>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <strong>499.000 VNĐ</strong>
+                  </div>
+                  <a class="btn btn-secondary" href="course-html-css-cho-nguoi-moi.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+            <article class="card course-card reveal" data-course-card data-title="JavaScript cơ bản đến nâng cao" data-description="Làm chủ DOM, sự kiện, logic xử lý và tương tác web thực tế." data-category="front-end" data-level="intermediate">
+              <div class="course-thumb thumb-indigo">JavaScript</div>
+              <div class="card-body">
+                <div class="course-meta">
+                  <span class="tag">Front-end</span>
+                  <span class="tag">Trung cấp</span>
+                </div>
+                <h3 class="card-title">JavaScript cơ bản đến nâng cao</h3>
+                <p class="card-text">Làm chủ DOM, sự kiện, logic xử lý và tương tác web thực tế.</p>
+                <ul class="course-list">
+                  <li>48 bài học</li>
+                  <li>32 giờ học</li>
+                  <li>1.299.000 VNĐ</li>
+                </ul>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <strong>1.299.000 VNĐ</strong>
+                  </div>
+                  <a class="btn btn-secondary" href="course-javascript-co-ban-den-nang-cao.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+            <article class="card course-card reveal" data-course-card data-title="Responsive Web Design" data-description="Thiết kế website hiển thị tốt trên desktop, tablet và mobile." data-category="front-end" data-level="beginner">
+              <div class="course-thumb thumb-orange">Responsive</div>
+              <div class="card-body">
+                <div class="course-meta">
+                  <span class="tag">Front-end</span>
+                  <span class="tag">Cơ bản</span>
+                </div>
+                <h3 class="card-title">Responsive Web Design</h3>
+                <p class="card-text">Thiết kế website hiển thị tốt trên desktop, tablet và mobile.</p>
+                <ul class="course-list">
+                  <li>30 bài học</li>
+                  <li>18 giờ học</li>
+                  <li>699.000 VNĐ</li>
+                </ul>
+                <div class="course-footer">
+                  <div class="course-price">
+                    <strong>699.000 VNĐ</strong>
+                  </div>
+                  <a class="btn btn-secondary" href="course-responsive-web-design.html">Xem chi tiết</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="about-layout">
+            <div class="panel reveal">
+              <p class="section-eyebrow">Vì sao chọn EduMax?</p>
+              <h2 class="section-title">Lộ trình rõ ràng giúp bạn học nhanh hơn và tự tin hơn</h2>
+              <p class="section-lead">EduMax được xây dựng để người mới không bị "ngợp" khi bắt đầu. Mọi bài học đều đi từ nền tảng, có ví dụ trực quan và bài tập nhỏ để bạn tiến bộ từng bước.</p>
+              <ul class="check-list">
+                <li>Hơn 5.000 học viên đã tham gia</li>
+                <li>20+ khóa học theo từng mục tiêu học tập</li>
+                <li>10+ giảng viên và mentor giàu kinh nghiệm</li>
+                <li>Chứng chỉ sau khi hoàn thành khóa học</li>
+              </ul>
+            </div>
+            <div class="card reveal">
+              <div class="media media-pattern-slate">
+                <div>
+                  <div class="media-label">Học như đang tham gia một lớp thực chiến</div>
+                  <div class="media-sub">Giao diện thân thiện, trực quan và tập trung vào trải nghiệm học viên</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="stats-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+                  <div class="stats-card">
+                    <span class="stats-number" data-counter="5000">0+</span>
+                    <span class="stats-label">Học viên</span>
+                  </div>
+                  <div class="stats-card">
+                    <span class="stats-number" data-counter="20">0+</span>
+                    <span class="stats-label">Khóa học</span>
+                  </div>
+                  <div class="stats-card">
+                    <span class="stats-number" data-counter="10">0+</span>
+                    <span class="stats-label">Giảng viên</span>
+                  </div>
+                  <div class="stats-card">
+                    <span class="stats-number" data-counter="95" data-suffix="%">0%</span>
+                    <span class="stats-label">Hài lòng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Lộ trình học</p>
+              <h2 class="section-title">4 bước để đi từ người mới đến có sản phẩm</h2>
+              <p class="section-lead">Mỗi khóa học đều được chia theo tiến trình dễ theo dõi, giúp bạn không bị rối và luôn biết mình đang ở đâu.</p>
+            </div>
+          </div>
+          <div class="grid grid-4">
+            <article class="card feature-card reveal">
+              <span class="feature-icon">01</span>
+              <h3 class="card-title">Chọn khóa phù hợp</h3>
+              <p>Xác định mục tiêu học tập, trình độ hiện tại và lộ trình cần theo đuổi.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">02</span>
+              <h3 class="card-title">Học qua video và tài liệu</h3>
+              <p>Nắm kiến thức nền tảng, xem demo trực quan và ghi nhớ theo từng ví dụ nhỏ.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">03</span>
+              <h3 class="card-title">Làm bài tập thực hành</h3>
+              <p>Áp dụng ngay vào các bài mini-project để rèn tư duy lập trình và bố cục.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">04</span>
+              <h3 class="card-title">Hoàn thành dự án cuối khóa</h3>
+              <p>Hoàn thiện một website hoàn chỉnh để bổ sung vào portfolio cá nhân.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Giảng viên nổi bật</p>
+              <h2 class="section-title">Đội ngũ mentor đồng hành cùng bạn</h2>
+            </div>
+            <a class="btn btn-secondary" href="teachers.html">Xem tất cả giảng viên</a>
+          </div>
+          <div class="grid grid-3">
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar  teacher-avatar">MA</div>
+                  <div>
+                    <h3 class="card-title">Nguyễn Minh Anh</h3>
+                    <div class="teacher-role">Front-end Developer</div>
+                    <p class="card-text">5 năm kinh nghiệm xây dựng website doanh nghiệp và mentoring người mới.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="Y">Y</a>
+                    <a class="social-link" href="#" aria-label="in">in</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar orange teacher-avatar">TH</div>
+                  <div>
+                    <h3 class="card-title">Trần Thu Hà</h3>
+                    <div class="teacher-role">UI/UX Designer</div>
+                    <p class="card-text">Chuyên thiết kế giao diện hiện đại, thân thiện và tối ưu trải nghiệm người dùng.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="IG">IG</a>
+                    <a class="social-link" href="#" aria-label="D">D</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar indigo teacher-avatar">QB</div>
+                  <div>
+                    <h3 class="card-title">Lê Quốc Bảo</h3>
+                    <div class="teacher-role">JavaScript Instructor</div>
+                    <p class="card-text">6 năm kinh nghiệm triển khai dự án web thực tế và giảng dạy cho học viên mới.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="GH">GH</a>
+                    <a class="social-link" href="#" aria-label="Y">Y</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar teal teacher-avatar">GH</div>
+                  <div>
+                    <h3 class="card-title">Phạm Gia Huy</h3>
+                    <div class="teacher-role">Front-end Mentor</div>
+                    <p class="card-text">4 năm hỗ trợ học viên luyện HTML, CSS và xây dựng giao diện chuẩn thiết bị.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="Y">Y</a>
+                    <a class="social-link" href="#" aria-label="LI">LI</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar pink teacher-avatar">MT</div>
+                  <div>
+                    <h3 class="card-title">Đỗ Mai Trang</h3>
+                    <div class="teacher-role">UI Motion Designer</div>
+                    <p class="card-text">Thiết kế layout, motion nhỏ và hệ thống màu sắc cho nhiều dự án học tập và startup.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="IG">IG</a>
+                    <a class="social-link" href="#" aria-label="D">D</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar slate teacher-avatar">TD</div>
+                  <div>
+                    <h3 class="card-title">Vũ Thành Đạt</h3>
+                    <div class="teacher-role">Web Instructor</div>
+                    <p class="card-text">Giảng dạy tư duy lập trình web, tối ưu quy trình học và xây dựng sản phẩm đầu tay cho sinh viên.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="GH">GH</a>
+                    <a class="social-link" href="#" aria-label="YT">YT</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Đánh giá học viên</p>
+              <h2 class="section-title">Cảm nhận thực tế từ người học</h2>
+              <p class="section-lead">Các phản hồi dưới đây là mẫu mô phỏng để làm website trông giống một nền tảng thực sự.</p>
+            </div>
+          </div>
+          <div class="testimonial-wrap reveal">
+            <div class="slider-shell" data-slider data-autoplay="true" data-interval="5400">
+              <div class="slider-track" data-slider-track>
+                <article class="card slider-slide" data-slider-slide>
+                  <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p>Khóa học rất dễ hiểu, giao diện web được hướng dẫn chi tiết và phù hợp cho người mới. Mình đã tự làm được landing page đầu tiên chỉ sau vài buổi học.</p>
+                    <div class="testimonial-profile">
+                      <div class="avatar ">LT</div>
+                      <div>
+                        <strong>Lê Thảo</strong>
+                        <small>Sinh viên CNTT</small>
+                      </div>
+                      <span class="rating" aria-label="5 sao">★★★★★</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="card slider-slide" data-slider-slide>
+                  <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p>Phần JavaScript và DOM được giải thích cực kỳ dễ hiểu. Các bài tập thực hành giúp mình nhớ lâu hơn hẳn so với việc chỉ xem video.</p>
+                    <div class="testimonial-profile">
+                      <div class="avatar orange">KN</div>
+                      <div>
+                        <strong>Khánh Nguyên</strong>
+                        <small>Học viên chuyển ngành</small>
+                      </div>
+                      <span class="rating" aria-label="5 sao">★★★★★</span>
+                    </div>
+                  </div>
+                </article>
+                <article class="card slider-slide" data-slider-slide>
+                  <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p>Mình thích nhất là lộ trình học rõ ràng và hỗ trợ nhanh từ giảng viên. Sau khóa học, mình có thể tự tin chỉnh sửa website cho dự án cá nhân.</p>
+                    <div class="testimonial-profile">
+                      <div class="avatar indigo">HA</div>
+                      <div>
+                        <strong>Hồng Anh</strong>
+                        <small>Người học thiết kế web</small>
+                      </div>
+                      <span class="rating" aria-label="5 sao">★★★★★</span>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div class="slider-controls">
+                <div class="slider-actions">
+                  <button class="icon-btn" type="button" data-slider-prev aria-label="Đánh giá trước">←</button>
+                  <button class="icon-btn" type="button" data-slider-next aria-label="Đánh giá tiếp">→</button>
+                </div>
+                <div class="slider-dots" data-slider-dots>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">FAQ</p>
+              <h2 class="section-title">Những câu hỏi thường gặp</h2>
+              <p class="section-lead">Phần này giúp website nhìn giống một nền tảng học thực sự và hỗ trợ giải đáp nhanh cho người xem.</p>
+            </div>
+          </div>
+          <div class="faq-grid accordion reveal" data-accordion data-single="true">
+            <article class="accordion-item is-open">
+              <button class="accordion-trigger" type="button" data-accordion-trigger aria-expanded="true">Tôi chưa biết gì về code thì có học được không?</button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">Hoàn toàn có thể. Các khóa học tại EduMax được thiết kế từ nền tảng, giải thích chậm, có ví dụ minh họa và bài tập từng bước cho người mới bắt đầu.</div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" data-accordion-trigger aria-expanded="false">Học online có bài tập thực hành không?</button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">Có. Mỗi bài đều đi kèm thực hành ngắn, mini project và một dự án cuối khóa để học viên có sản phẩm hoàn chỉnh đưa vào portfolio.</div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" data-accordion-trigger aria-expanded="false">Sau khi học xong tôi nhận được gì?</button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">Bạn sẽ có kiến thức nền tảng, kỹ năng tự làm website, sản phẩm thực tế để giới thiệu và chứng chỉ hoàn thành khóa học từ EduMax.</div>
+              </div>
+            </article>
+            <article class="accordion-item">
+              <button class="accordion-trigger" type="button" data-accordion-trigger aria-expanded="false">Có được hỗ trợ sau khóa học không?</button>
+              <div class="accordion-panel">
+                <div class="accordion-panel-inner">Có. Học viên có thể liên hệ EduMax để được tư vấn thêm về bài tập, portfolio hoặc định hướng lộ trình học tiếp theo.</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="panel reveal" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(245, 158, 11, 0.12));">
+            <div class="grid grid-2" style="align-items: center;">
+              <div>
+                <p class="section-eyebrow">CTA</p>
+                <h2 class="section-title">Sẵn sàng bắt đầu hành trình học lập trình web?</h2>
+                <p class="section-lead">Chọn một khóa học phù hợp, để EduMax đồng hành cùng bạn từ bước đầu tiên đến khi hoàn thành sản phẩm thật.</p>
+              </div>
+              <div class="form-actions" style="justify-content: flex-end;">
+                <a class="btn btn-primary" href="contact.html#register-course">Đăng ký ngay</a>
+                <a class="btn btn-secondary" href="contact.html#contact-form">Liên hệ tư vấn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark">E</span>
+              <span class="brand-copy">
+                <strong>EduMax</strong>
+                <small>Nền tảng học lập trình web</small>
+              </span>
+            </a>
+            <p>EduMax là website tĩnh mô phỏng nền tảng học online, tập trung vào giao diện hiện đại, nội dung rõ ràng và trải nghiệm người dùng chuyên nghiệp.</p>
+            <div class="footer-social">
+              <a class="social-link" href="#" aria-label="Facebook">F</a>
+              <a class="social-link" href="#" aria-label="YouTube">Y</a>
+              <a class="social-link" href="#" aria-label="TikTok">T</a>
+            </div>
+          </div>
+          <div>
+            <h4>Liên kết nhanh</h4>
+            <div class="footer-links">
+              <a href="about.html">Giới thiệu</a>
+              <a href="courses.html">Khóa học</a>
+              <a href="teachers.html">Giảng viên</a>
+              <a href="blog.html">Blog</a>
+              <a href="contact.html#contact-form">Liên hệ</a>
+            </div>
+          </div>
+          <div>
+            <h4>Thông tin liên hệ</h4>
+            <div class="footer-contact">
+              <span>123 Nguyễn Văn Linh, Đà Nẵng</span>
+              <a href="tel:0909123456">0909 123 456</a>
+              <a href="mailto:info@edumax.vn">info@edumax.vn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 EduMax. All rights reserved.</span>
+          <span>Thiết kế website tĩnh giới thiệu nền tảng khóa học online</span>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Lên đầu trang" data-back-to-top>↑</button>
+  </body>
 </html>

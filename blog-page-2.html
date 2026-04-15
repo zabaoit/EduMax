@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Một lộ trình gọn, dễ áp dụng để đi từ mục tiêu đến thực hành và portfolio mà không bị quá tải." />
-    <title>EduMax | Lộ trình 5 bước tự học lập trình web cho người mới</title>
+    <meta name="description" content="Blog EduMax chia sẻ kiến thức, lộ trình học và mẹo thiết kế web cho người mới." />
+    <title>EduMax | Blog - Trang 2</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/slider.js" defer></script>
     <script src="assets/js/filter.js" defer></script>
     <script src="assets/js/form-validation.js" defer></script>
   </head>
-  <body data-page="blog-detail">
+  <body data-page="blog">
     <header class="header-shell">
       <div class="container nav-wrap">
         <a class="brand" href="index.html" aria-label="EduMax trang chủ">
@@ -48,12 +48,10 @@
               <div class="breadcrumbs">
                 <a href="index.html">Trang chủ</a>
                 <span>/</span>
-                <a href="blog.html">Blog</a>
-                <span>/</span>
-                <span>Chi tiết</span>
+                <span>Blog</span>
               </div>
-              <h1>Chi tiết bài viết</h1>
-              <p>Trang chi tiết bài viết giúp làm đầy trải nghiệm nội dung và khiến website trông giống một blog thực sự.</p>
+              <h1>Blog / Chia sẻ kiến thức</h1>
+              <p>Khu vực blog giúp website trông chuyên nghiệp hơn, đồng thời gợi ý thêm nội dung hữu ích về lập trình web và thiết kế giao diện.</p>
             </div>
           </div>
         </div>
@@ -61,68 +59,96 @@
       <section class="section">
         <div class="container">
           <div class="blog-layout">
-            <article class="article">
-              <div class="article-hero reveal">
-                <div class="article-meta">
-                  <span>15/03/2026</span>
-                  <span>•</span>
-                  <span>EduMax</span>
-                  <span>•</span>
-                  <span>Lộ trình học</span>
-                </div>
-                <h2>Lộ trình 5 bước tự học lập trình web cho người mới</h2>
-                <div class="article-cover indigo">
+            <div class="stack">
+              <div class="filter-bar reveal" style="grid-template-columns: 1fr;">
+                <input class="input" type="search" placeholder="Tìm kiếm bài viết..." data-blog-search />
+                <div class="search-results" data-blog-results>2 bài viết</div>
+              </div>
+              <div class="grid grid-2">
+                <article class="card blog-card reveal" data-blog-card data-title="Responsive web là gì và vì sao quan trọng?" data-excerpt="Vì người dùng truy cập web bằng nhiều thiết bị khác nhau, responsive trở thành kỹ năng bắt buộc." data-author="EduMax">
+                  <div class="course-thumb thumb-pink">Front-end</div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <span>25/03/2026</span>
+                      <span>•</span>
+                      <span>EduMax</span>
+                    </div>
+                    <h3 class="card-title">Responsive web là gì và vì sao quan trọng?</h3>
+                    <p class="card-text">Vì người dùng truy cập web bằng nhiều thiết bị khác nhau, responsive trở thành kỹ năng bắt buộc.</p>
+                    <div class="blog-footer">
+                      <span class="tag">Front-end</span>
+                      <a class="btn btn-secondary" href="blog-responsive-web-la-gi.html">Đọc thêm</a>
+                    </div>
+                  </div>
+                </article>
+                <article class="card blog-card reveal" data-blog-card data-title="Nên bắt đầu học Front-end từ đâu?" data-excerpt="Nếu bạn đang phân vân bắt đầu như thế nào, đây là bài viết dành cho bạn với danh sách tài nguyên dễ theo." data-author="EduMax">
+                  <div class="course-thumb thumb-slate">Lộ trình học</div>
+                  <div class="card-body">
+                    <div class="blog-meta">
+                      <span>27/03/2026</span>
+                      <span>•</span>
+                      <span>EduMax</span>
+                    </div>
+                    <h3 class="card-title">Nên bắt đầu học Front-end từ đâu?</h3>
+                    <p class="card-text">Nếu bạn đang phân vân bắt đầu như thế nào, đây là bài viết dành cho bạn với danh sách tài nguyên dễ theo.</p>
+                    <div class="blog-footer">
+                      <span class="tag">Lộ trình học</span>
+                      <a class="btn btn-secondary" href="blog-bat-dau-hoc-front-end-tu-dau.html">Đọc thêm</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <div style="display:flex; justify-content:center; margin-top: 8px;">
+                <div class="pagination reveal">
+                  <a class="" href="blog.html">1</a>
+                  <a class="is-active" href="blog-page-2.html">2</a>
+                  <span aria-disabled="true">Next</span>
                 </div>
               </div>
-              <div class="panel article-content reveal">
-                <p>Nếu bạn mới bắt đầu, cách an toàn nhất là đi theo một lộ trình ngắn, rõ và dễ duy trì. Thay vì học dàn trải, hãy chia hành trình thành từng chặng nhỏ để nhìn thấy tiến bộ sớm.</p>
-                <h3>Bước 1: Xác định mục tiêu học</h3>
-                <p>Hãy tự hỏi bạn muốn làm giao diện, theo front-end hay chỉ cần nắm nền tảng để thử sức với web. Khi có mục tiêu, bạn sẽ biết nên học sâu đến đâu và tránh bỏ thời gian vào phần chưa cần thiết.</p>
-                <h3>Bước 2: Nắm HTML và CSS</h3>
-                <p>HTML giúp bạn dựng khung nội dung, còn CSS giúp bạn tạo bố cục và phong cách hiển thị. Hai phần này nên học song song để bạn sớm nhìn thấy kết quả trên trình duyệt.</p>
-                <h3>Bước 3: Học JavaScript cơ bản</h3>
-                <p>Khi đã quen với giao diện tĩnh, hãy chuyển sang JavaScript để hiểu cách website phản hồi khi người dùng tương tác. Chỉ cần bắt đầu từ biến, điều kiện, vòng lặp và DOM là đủ cho giai đoạn đầu.</p>
-                <h3>Bước 4: Làm một vài dự án nhỏ</h3>
-                <p>Thực hành bằng các bài như to-do list, trang giới thiệu cá nhân hoặc form có kiểm tra dữ liệu. Dự án nhỏ giúp bạn nhớ lâu hơn và nhận ra phần nào mình còn yếu để quay lại ôn tập.</p>
-                <h3>Bước 5: Tạo portfolio và duy trì thói quen học</h3>
-                <p>Gom lại những gì bạn đã làm thành một portfolio đơn giản, rồi tiếp tục nâng cấp bằng các dự án mới. Đây là cách tốt để theo dõi tiến bộ của bản thân và chuẩn bị cho những bước tiếp theo.</p>
-                <div class="highlight-box">Đi chậm, học chắc và làm dự án sớm thường hiệu quả hơn rất nhiều so với việc nhảy cóc giữa quá nhiều chủ đề.</div>
-                <p>Mỗi ngày chỉ cần một chút, bạn vẫn sẽ tiến bộ rất nhanh nếu luôn gắn kiến thức với thực hành.</p>
-              </div>
-            </article>
+            </div>
             <aside class="sidebar">
               <div class="panel reveal">
-                <h3>Bài viết liên quan</h3>
+                <h3>Bài viết mới nhất</h3>
                 <ul class="sidebar-list">
+                  <li>
+                    <a href="blog-lo-trinh-5-buoc-hoc-web.html">
+                      <strong>Lộ trình 5 bước tự học lập trình web cho người mới</strong>
+                      <small>15/03/2026</small>
+                    </a>
+                  </li>
                   <li>
                     <a href="blog-html-css-javascript-khac-nhau.html">
                       <strong>HTML, CSS và JavaScript khác nhau như thế nào?</strong>
-                      <small>Kiến thức nền tảng</small>
+                      <small>18/03/2026</small>
                     </a>
                   </li>
                   <li>
                     <a href="blog-loi-pho-bien-khi-thiet-ke-landing-page.html">
                       <strong>Những lỗi phổ biến khi thiết kế landing page</strong>
-                      <small>Thiết kế web</small>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="blog-cach-xay-dung-portfolio-sinh-vien-it.html">
-                      <strong>Cách xây dựng portfolio cho sinh viên IT</strong>
-                      <small>Career</small>
+                      <small>20/03/2026</small>
                     </a>
                   </li>
                 </ul>
               </div>
               <div class="panel reveal">
-                <h3>Chủ đề phổ biến</h3>
+                <h3>Danh mục</h3>
+                <div class="tag-list">
+                  <span class="tag">Lộ trình học</span>
+                  <span class="tag">Kiến thức nền tảng</span>
+                  <span class="tag">Thiết kế web</span>
+                  <span class="tag">Career</span>
+                  <span class="tag">Front-end</span>
+                </div>
+              </div>
+              <div class="panel reveal">
+                <h3>Tag phổ biến</h3>
                 <div class="tag-list">
                   <span class="tag">HTML</span>
                   <span class="tag">CSS</span>
                   <span class="tag">JavaScript</span>
                   <span class="tag">Responsive</span>
                   <span class="tag">Portfolio</span>
-                  <span class="tag">Career</span>
+                  <span class="tag">UI/UX</span>
                 </div>
               </div>
             </aside>

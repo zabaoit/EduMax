@@ -1,18 +1,232 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Liên hệ EduMax để được tư vấn khóa học, nhận thông tin và đăng ký học online." />
-  <title>EduMax | Liên hệ</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/js/content.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/slider.js" defer></script>
-  <script src="assets/js/filter.js" defer></script>
-  <script src="assets/js/form-validation.js" defer></script>
-</head>
-<body data-page="contact">
-  <div id="site-root"></div>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Liên hệ EduMax để được tư vấn khóa học, lộ trình học lập trình web và đăng ký khóa học online." />
+    <title>EduMax | Liên hệ</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/filter.js" defer></script>
+    <script src="assets/js/form-validation.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <header class="header-shell">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="EduMax trang chủ">
+          <span class="brand-mark">E</span>
+          <span class="brand-copy">
+            <strong>EduMax</strong>
+            <small>Nền tảng học lập trình web</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Mở menu" data-nav-toggle>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link" href="about.html">Giới thiệu</a>
+          <a class="nav-link" href="courses.html">Khóa học</a>
+          <a class="nav-link" href="teachers.html">Giảng viên</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link is-active" href="#contact-form">Liên hệ</a>
+          <a class="btn btn-primary nav-cta" href="#register-course">Đăng ký ngay</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-card reveal">
+            <div class="page-hero-grid">
+              <div class="breadcrumbs">
+                <a href="index.html">Trang chủ</a>
+                <span>/</span>
+                <span>Liên hệ</span>
+              </div>
+              <h1>Liên hệ với chúng tôi</h1>
+              <p>Đây là trang chuyển đổi hành động, cho phép người dùng gửi thông tin liên hệ hoặc đăng ký khóa học ngay từ giao diện tĩnh.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact-form">
+        <div class="container">
+          <div class="contact-layout">
+            <div class="stack">
+              <div class="panel reveal contact-card">
+                <h3>Thông tin liên hệ</h3>
+                <div class="contact-item">
+                  <span class="contact-icon">📍</span>
+                  <div>
+                    <strong>Địa chỉ</strong>
+                    <small>123 Nguyễn Văn Linh, Đà Nẵng</small>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">☎</span>
+                  <div>
+                    <strong>Hotline</strong>
+                    <small>0909 123 456</small>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">✉</span>
+                  <div>
+                    <strong>Email</strong>
+                    <small>info@edumax.vn</small>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <span class="contact-icon">⏰</span>
+                  <div>
+                    <strong>Giờ làm việc</strong>
+                    <small>8:00 - 21:00</small>
+                  </div>
+                </div>
+              </div>
+              <div class="map-frame reveal">
+                <iframe title="Bản đồ EduMax" src="https://www.google.com/maps?q=Da%20Nang&output=embed" loading="lazy">
+                </iframe>
+              </div>
+            </div>
+            <div class="panel reveal">
+              <div class="stack">
+                <div>
+                  <p class="section-eyebrow">Form liên hệ</p>
+                  <h2 class="section-title">Gửi thông tin để EduMax phản hồi</h2>
+                  <p class="section-lead">Bạn có thể hỏi về khóa học, lịch khai giảng hoặc yêu cầu tư vấn lộ trình học tập phù hợp.</p>
+                </div>
+                <form class="form-grid" novalidate data-validate-form data-success-message="Liên hệ thành công! Chúng tôi sẽ phản hồi sớm.">
+                  <div class="form-grid cols-2">
+                    <div class="field">
+                      <label for="contact-name">Họ tên</label>
+                      <input id="contact-name" class="input" type="text" required placeholder="Nhập họ và tên" />
+                    </div>
+                    <div class="field">
+                      <label for="contact-email">Email</label>
+                      <input id="contact-email" class="input" type="email" required placeholder="you@example.com" />
+                    </div>
+                    <div class="field">
+                      <label for="contact-phone">Số điện thoại</label>
+                      <input id="contact-phone" class="input" type="tel" required placeholder="0909 123 456" />
+                    </div>
+                    <div class="field">
+                      <label for="contact-subject">Chủ đề</label>
+                      <input id="contact-subject" class="input" type="text" required placeholder="Hỏi về khóa học" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="contact-message">Nội dung</label>
+                    <textarea id="contact-message" class="textarea" required placeholder="Mô tả ngắn nhu cầu của bạn">
+                    </textarea>
+                  </div>
+                  <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Gửi liên hệ</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section alt" id="register-course">
+          <div class="container">
+            <div class="panel reveal">
+              <div class="grid grid-2" style="align-items: start;">
+                <div>
+                  <p class="section-eyebrow">Đăng ký khóa học</p>
+                  <h2 class="section-title">Đăng ký nhanh qua form bên cạnh</h2>
+                  <p class="section-lead">Dành cho học viên đã chọn được khóa học và muốn điền thêm thông tin để được liên hệ tư vấn.</p>
+                </div>
+                <form class="form-grid" novalidate data-validate-form data-success-message="Đăng ký thành công! Chúng tôi sẽ liên hệ sớm.">
+                  <div class="form-grid cols-2">
+                    <div class="field">
+                      <label for="register-name">Họ tên</label>
+                      <input id="register-name" class="input" type="text" required placeholder="Nhập họ và tên" />
+                    </div>
+                    <div class="field">
+                      <label for="register-email">Email</label>
+                      <input id="register-email" class="input" type="email" required placeholder="you@example.com" />
+                    </div>
+                    <div class="field">
+                      <label for="register-phone">Số điện thoại</label>
+                      <input id="register-phone" class="input" type="tel" required placeholder="0909 123 456" />
+                    </div>
+                    <div class="field">
+                      <label for="register-course">Chọn khóa học</label>
+                      <select id="register-course" class="select" required>
+                        <option value="">-- Chọn khóa học --</option>
+                        <option>HTML & CSS cho người mới bắt đầu</option>
+                        <option>JavaScript cơ bản đến nâng cao</option>
+                        <option>Responsive Web Design</option>
+                        <option>Bootstrap thực hành</option>
+                        <option>UI/UX cơ bản cho người làm web</option>
+                        <option>Dự án website hoàn chỉnh</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label for="register-note">Ghi chú</label>
+                    <textarea id="register-note" class="textarea" placeholder="Bạn muốn học khóa nào?">
+                    </textarea>
+                  </div>
+                  <div class="form-actions">
+                    <button class="btn btn-primary" type="submit">Gửi đăng ký</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-grid">
+              <div class="footer-brand">
+                <a class="brand" href="index.html">
+                  <span class="brand-mark">E</span>
+                  <span class="brand-copy">
+                    <strong>EduMax</strong>
+                    <small>Nền tảng học lập trình web</small>
+                  </span>
+                </a>
+                <p>EduMax là website tĩnh mô phỏng nền tảng học online, tập trung vào giao diện hiện đại, nội dung rõ ràng và trải nghiệm người dùng chuyên nghiệp.</p>
+                <div class="footer-social">
+                  <a class="social-link" href="#" aria-label="Facebook">F</a>
+                  <a class="social-link" href="#" aria-label="YouTube">Y</a>
+                  <a class="social-link" href="#" aria-label="TikTok">T</a>
+                </div>
+              </div>
+              <div>
+                <h4>Liên kết nhanh</h4>
+                <div class="footer-links">
+                  <a href="about.html">Giới thiệu</a>
+                  <a href="courses.html">Khóa học</a>
+                  <a href="teachers.html">Giảng viên</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="contact.html#contact-form">Liên hệ</a>
+                </div>
+              </div>
+              <div>
+                <h4>Thông tin liên hệ</h4>
+                <div class="footer-contact">
+                  <span>123 Nguyễn Văn Linh, Đà Nẵng</span>
+                  <a href="tel:0909123456">0909 123 456</a>
+                  <a href="mailto:info@edumax.vn">info@edumax.vn</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <span>© 2026 EduMax. All rights reserved.</span>
+              <span>Thiết kế website tĩnh giới thiệu nền tảng khóa học online</span>
+            </div>
+          </div>
+        </footer>
+        <button class="back-to-top" type="button" aria-label="Lên đầu trang" data-back-to-top>↑</button>
+      </body>
+    </html>

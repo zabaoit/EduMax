@@ -1,18 +1,283 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Đội ngũ giảng viên EduMax với hồ sơ, chuyên môn và lợi ích khi học cùng mentor thực chiến." />
-  <title>EduMax | Giảng viên</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/js/content.js" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/slider.js" defer></script>
-  <script src="assets/js/filter.js" defer></script>
-  <script src="assets/js/form-validation.js" defer></script>
-</head>
-<body data-page="teachers">
-  <div id="site-root"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Đội ngũ giảng viên EduMax với hồ sơ, chuyên môn và lợi ích khi học cùng mentor thực chiến." />
+    <title>EduMax | Giảng viên</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/filter.js" defer></script>
+    <script src="assets/js/form-validation.js" defer></script>
+  </head>
+  <body data-page="teachers">
+    <header class="header-shell">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="EduMax trang chủ">
+          <span class="brand-mark">E</span>
+          <span class="brand-copy">
+            <strong>EduMax</strong>
+            <small>Nền tảng học lập trình web</small>
+          </span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Mở menu" data-nav-toggle>
+          <span>
+          </span>
+          <span>
+          </span>
+          <span>
+          </span>
+        </button>
+        <nav class="site-nav" data-nav>
+          <a class="nav-link" href="index.html">Trang chủ</a>
+          <a class="nav-link" href="about.html">Giới thiệu</a>
+          <a class="nav-link" href="courses.html">Khóa học</a>
+          <a class="nav-link is-active" href="teachers.html">Giảng viên</a>
+          <a class="nav-link" href="blog.html">Blog</a>
+          <a class="nav-link" href="contact.html#contact-form">Liên hệ</a>
+          <a class="btn btn-primary nav-cta" href="contact.html#register-course">Đăng ký ngay</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="page-hero-card reveal">
+            <div class="page-hero-grid">
+              <div class="breadcrumbs">
+                <a href="index.html">Trang chủ</a>
+                <span>/</span>
+                <span>Giảng viên</span>
+              </div>
+              <h1>Đội ngũ giảng viên</h1>
+              <p>Đội ngũ giảng viên của EduMax được chọn lọc để bảo đảm nội dung dễ hiểu, có tính thực chiến và luôn cập nhật theo xu hướng công nghệ.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Danh sách giảng viên</p>
+              <h2 class="section-title">6 giảng viên mẫu của EduMax</h2>
+            </div>
+          </div>
+          <div class="grid grid-3">
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar  teacher-avatar">MA</div>
+                  <div>
+                    <h3 class="card-title">Nguyễn Minh Anh</h3>
+                    <div class="teacher-role">Front-end Developer</div>
+                    <p class="card-text">5 năm kinh nghiệm xây dựng website doanh nghiệp và mentoring người mới.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="Y">Y</a>
+                    <a class="social-link" href="#" aria-label="in">in</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar orange teacher-avatar">TH</div>
+                  <div>
+                    <h3 class="card-title">Trần Thu Hà</h3>
+                    <div class="teacher-role">UI/UX Designer</div>
+                    <p class="card-text">Chuyên thiết kế giao diện hiện đại, thân thiện và tối ưu trải nghiệm người dùng.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="IG">IG</a>
+                    <a class="social-link" href="#" aria-label="D">D</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar indigo teacher-avatar">QB</div>
+                  <div>
+                    <h3 class="card-title">Lê Quốc Bảo</h3>
+                    <div class="teacher-role">JavaScript Instructor</div>
+                    <p class="card-text">6 năm kinh nghiệm triển khai dự án web thực tế và giảng dạy cho học viên mới.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="GH">GH</a>
+                    <a class="social-link" href="#" aria-label="Y">Y</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar teal teacher-avatar">GH</div>
+                  <div>
+                    <h3 class="card-title">Phạm Gia Huy</h3>
+                    <div class="teacher-role">Front-end Mentor</div>
+                    <p class="card-text">4 năm hỗ trợ học viên luyện HTML, CSS và xây dựng giao diện chuẩn thiết bị.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="Y">Y</a>
+                    <a class="social-link" href="#" aria-label="LI">LI</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar pink teacher-avatar">MT</div>
+                  <div>
+                    <h3 class="card-title">Đỗ Mai Trang</h3>
+                    <div class="teacher-role">UI Motion Designer</div>
+                    <p class="card-text">Thiết kế layout, motion nhỏ và hệ thống màu sắc cho nhiều dự án học tập và startup.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="IG">IG</a>
+                    <a class="social-link" href="#" aria-label="D">D</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="card teacher-card reveal">
+              <div class="card-body">
+                <div class="teacher-info">
+                  <div class="avatar slate teacher-avatar">TD</div>
+                  <div>
+                    <h3 class="card-title">Vũ Thành Đạt</h3>
+                    <div class="teacher-role">Web Instructor</div>
+                    <p class="card-text">Giảng dạy tư duy lập trình web, tối ưu quy trình học và xây dựng sản phẩm đầu tay cho sinh viên.</p>
+                  </div>
+                  <div class="social-links">
+                    <a class="social-link" href="#" aria-label="F">F</a>
+                    <a class="social-link" href="#" aria-label="GH">GH</a>
+                    <a class="social-link" href="#" aria-label="YT">YT</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section alt">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Giảng viên nổi bật</p>
+              <h2 class="section-title">Một mentor tiêu biểu trong hệ thống khóa học</h2>
+            </div>
+          </div>
+          <div class="about-layout">
+            <div class="card reveal">
+              <div class="media media-pattern-indigo">
+                <div>
+                  <div class="media-label">Mentor nổi bật</div>
+                  <div class="media-sub">Đồng hành cùng học viên trong các khóa JavaScript và project</div>
+                </div>
+              </div>
+            </div>
+            <div class="panel reveal">
+              <h3>Lê Quốc Bảo</h3>
+              <p class="teacher-role">JavaScript Instructor</p>
+              <p class="section-lead">6 năm kinh nghiệm triển khai dự án web thực tế và giảng dạy cho học viên mới.</p>
+              <ul class="check-list">
+                <li>Thành thạo giảng dạy theo project-based learning</li>
+                <li>Hỗ trợ giải đáp bài tập rõ ràng, dễ hiểu</li>
+                <li>Cập nhật kiến thức mới theo xu hướng front-end</li>
+                <li>Đang phụ trách các khóa JavaScript và dự án web hoàn chỉnh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="section-eyebrow">Lợi ích</p>
+              <h2 class="section-title">Vì sao nên học cùng giảng viên tại EduMax?</h2>
+              <p class="section-lead">Các điểm mạnh này giúp trang giảng viên không chỉ đẹp mà còn có chiều sâu thông tin.</p>
+            </div>
+          </div>
+          <div class="grid grid-4">
+            <article class="card feature-card reveal">
+              <span class="feature-icon">01</span>
+              <h3 class="card-title">Giải thích dễ hiểu</h3>
+              <p>Giảng viên luôn chia nhỏ vấn đề thành từng bước để người mới không bị quá tải.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">02</span>
+              <h3 class="card-title">Có bài tập thực tế</h3>
+              <p>Bài tập được thiết kế theo cách giúp bạn vừa học vừa làm quen với tư duy dự án.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">03</span>
+              <h3 class="card-title">Hỗ trợ học viên</h3>
+              <p>Nhận phản hồi và tư vấn lộ trình sau mỗi buổi học, giúp học viên không bị “kẹt”.</p>
+            </article>
+            <article class="card feature-card reveal">
+              <span class="feature-icon">04</span>
+              <h3 class="card-title">Cập nhật kiến thức mới</h3>
+              <p>Nội dung khóa học được điều chỉnh để phù hợp với xu hướng phát triển của front-end.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html">
+              <span class="brand-mark">E</span>
+              <span class="brand-copy">
+                <strong>EduMax</strong>
+                <small>Nền tảng học lập trình web</small>
+              </span>
+            </a>
+            <p>EduMax là website tĩnh mô phỏng nền tảng học online, tập trung vào giao diện hiện đại, nội dung rõ ràng và trải nghiệm người dùng chuyên nghiệp.</p>
+            <div class="footer-social">
+              <a class="social-link" href="#" aria-label="Facebook">F</a>
+              <a class="social-link" href="#" aria-label="YouTube">Y</a>
+              <a class="social-link" href="#" aria-label="TikTok">T</a>
+            </div>
+          </div>
+          <div>
+            <h4>Liên kết nhanh</h4>
+            <div class="footer-links">
+              <a href="about.html">Giới thiệu</a>
+              <a href="courses.html">Khóa học</a>
+              <a href="teachers.html">Giảng viên</a>
+              <a href="blog.html">Blog</a>
+              <a href="contact.html#contact-form">Liên hệ</a>
+            </div>
+          </div>
+          <div>
+            <h4>Thông tin liên hệ</h4>
+            <div class="footer-contact">
+              <span>123 Nguyễn Văn Linh, Đà Nẵng</span>
+              <a href="tel:0909123456">0909 123 456</a>
+              <a href="mailto:info@edumax.vn">info@edumax.vn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 EduMax. All rights reserved.</span>
+          <span>Thiết kế website tĩnh giới thiệu nền tảng khóa học online</span>
+        </div>
+      </div>
+    </footer>
+    <button class="back-to-top" type="button" aria-label="Lên đầu trang" data-back-to-top>↑</button>
+  </body>
 </html>
