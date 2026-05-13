@@ -21,6 +21,7 @@
     var reset = document.querySelector("[data-course-reset]");
     var results = document.querySelector("[data-course-results]");
     var cards = Array.prototype.slice.call(document.querySelectorAll("[data-course-card]"));
+    var totalCourses = Number(document.body.dataset.courseTotal || cards.length);
 
     if (!cards.length || (!search && !category && !level)) {
       return;
@@ -31,6 +32,7 @@
       var selectedCategory = category ? category.value : "all";
       var selectedLevel = level ? level.value : "all";
       var visibleCount = 0;
+      var isDefaultFilter = !query && selectedCategory === "all" && selectedLevel === "all";
 
       cards.forEach(function (card) {
         var haystack = normalize(
@@ -54,7 +56,7 @@
       });
 
       if (results) {
-        results.textContent = visibleCount + " khóa học";
+        results.textContent = (isDefaultFilter ? totalCourses : visibleCount) + " kh\u00F3a h\u1ECDc";
       }
     }
 
@@ -123,4 +125,3 @@
     setupBlogSearch();
   });
 })();
-

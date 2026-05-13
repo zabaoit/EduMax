@@ -1392,6 +1392,7 @@ body[data-page="labs"] .course-card .course-list + .btn {
 .filter-bar {
   display: grid;
   grid-template-columns: 1.2fr repeat(3, minmax(0, 1fr)) auto;
+  align-items: center;
   gap: 12px;
   padding: 16px;
   border-radius: 28px;
@@ -1461,6 +1462,10 @@ body[data-page="labs"] .course-card .course-list + .btn {
 }
 
 .search-results {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  white-space: nowrap;
   color: var(--muted);
   font-size: 0.94rem;
 }
