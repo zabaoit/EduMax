@@ -395,6 +395,7 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   min-height: 48px;
   padding: 0 16px;
   border-radius: 999px;
@@ -941,6 +942,14 @@ button {
   margin: 0;
   margin-top: auto;
   list-style: none;
+}
+
+body[data-page="labs"] .course-card .course-list {
+  margin-top: 0;
+}
+
+body[data-page="labs"] .course-card .course-list + .btn {
+  margin-top: auto;
 }
 
 .course-list li {
